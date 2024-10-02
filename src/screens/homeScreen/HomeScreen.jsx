@@ -1,4 +1,5 @@
 import About from '../../components/About/About';
+import Carousel from '../../components/Carousel/Carousel';
 import Hero from '../../components/Hero/Hero';
 import Necesidad from '../../components/Necesidad/Necesidad';
 import Soluciones from '../../components/Soluciones/Soluciones';
@@ -17,6 +18,7 @@ const HomeScreen = () => {
             <About />
             <Necesidad />
             <Soluciones />
+            <Carousel />
         </section>
     )
 };
