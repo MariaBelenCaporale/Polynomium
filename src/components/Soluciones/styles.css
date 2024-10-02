@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Bebas";
+  src: url("../../fonts/BebasNeue-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../../fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../../fonts/Poppins/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("../../fonts/Poppins/Poppins-Light.ttf");
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .sectionSoluciones {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contenedorSolucionesTotal {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+  }
+  .contenedorSolucionTexto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 65%;
+  }
+  .solucionesUno, .solucionesDos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+  }
+  .tituloSoluciones {
+    color: #FFF;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: 'Poppins-Regular';
+    font-size: 3em;
+    font-style: normal;
+    line-height: 88px;
+  }
+  .textoSoluciones {
+    color: #FFF;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: 'Poppins-Light';
+    font-size: 1.4em;
+    font-style: normal;
+  }
+  .textoClickSoluciones {
+    color: #FFF;
+font-feature-settings: 'liga' off, 'clig' off;
+font-family: 'Poppins-Light';
+font-size: 1em;
+font-style: normal;
+line-height: 34px; 
+  }
+.contenedorBotonesSolu {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.btnSolucion {
+    display: flex;
+    background: transparent;
+    border: 0px;
+    padding: 20px 0px;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 1em;
+
+    color: #FFF;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: 'Poppins-Light';
+    font-size: 1.2em;
+    font-style: normal;
+}
+.lineaSoluciones {
+    display: block;
+    height: 3px; 
+    background-color: transparent; 
+    transition: background-color 0.3s ease; 
+  }
+  
+  .lineaSoluciones.activo {
+    background-color: blue; 
+    height: 5px;
+  }
+  
+
+ 
+  
+.lineaSoluciones {
+    width: 100%;
+    height: 1px;
+    background-color: #FFFFFF;
+    transition: background-color 0.3s ease; 
+}
+}

@@ -1,0 +1,17 @@
+
+#root {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #111;
+  fill: rgba(255, 255, 255, 0.01);
+}
+
+h1, h2, h3, p {
+  margin: 0px;
+}

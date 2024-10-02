@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Bebas";
+  src: url("../../fonts/BebasNeue-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/Poppins/Poppins-Black.ttf");
+  src: url("../../fonts/Poppins/Poppins-Bold.ttf");
+  src: url("../../fonts/Poppins/Poppins-ExtraBold.ttf");
+  src: url("../../fonts/Poppins/Poppins-ExtraLight.ttf");
+  src: url("../../fonts/Poppins/Poppins-Light.ttf");
+  src: url("../../fonts/Poppins/Poppins-Medium.ttf");
+  src: url("../../fonts/Poppins/Poppins-Regular.ttf");
+  src: url("../../fonts/Poppins/Poppins-SemiBold.ttf");
+  src: url("../../fonts/Poppins/Poppins-Thin.ttf");
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .link {
+    color: #fff;
+    text-align: center;
+    font-family: "Poppins-Regular";
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+  }
+  .navLinks {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3em;
+  }
+  .logo {
+    font-size: 24px;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 90px;
+  }
+}
