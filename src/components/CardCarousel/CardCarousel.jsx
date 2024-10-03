@@ -1,14 +1,13 @@
 import PropTypes from "prop-types";
 import "./styles.css";
 import Roca from "../../images/roca.png";
-import Moneda from "../../images/coin.png";
 
-const CardCarousel = ({ miniTitulo, titulo, textoUno, texto }) => {
+const CardCarousel = ({ miniTitulo, titulo, textoUno, texto, imageCarousel }) => {
   return (
     <div className="contenedorCard">
       <div className="contenedorCarouselUno">
         <div className="contenedorImgCarouselUno">
-          <img src={Moneda} alt="Imagen de una moneda de Megapix" />
+          <img src={imageCarousel} alt="Imagen de una moneda de Megapix" />
         </div>
         <div className="contenedorTextosCarousel">
           <p className="miniTituloCarousel">{miniTitulo}</p>
@@ -28,7 +27,8 @@ CardCarousel.propTypes = {
   miniTitulo: PropTypes.string.isRequired,
   titulo: PropTypes.string.isRequired,
   textoUno: PropTypes.string,
-  texto: PropTypes.string
+  texto: PropTypes.string,
+  imageCarousel: PropTypes.string.isRequired,
 };
 
 export default CardCarousel;
