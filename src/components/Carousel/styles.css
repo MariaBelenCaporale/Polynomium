@@ -27,8 +27,10 @@
     align-items: center;
     justify-content: center;
   }
-  /* 
- 
+  
+  .containerBtnCarousel {
+    z-index: 20;
+  }
   .btnCarousel {
     background-color: transparent;
     border: 1px solid white;
@@ -37,7 +39,7 @@
     cursor: pointer;
     border-radius: 50%;
     color: white;
-  } */
+  }
 
   .containerLuzUno {
     width: 100%;
