@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "Bebas";
+  src: url("../../fonts/BebasNeue-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("../../fonts/Poppins/Poppins-Light.ttf");
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../../fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../../fonts/Poppins/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../../fonts/Poppins/Poppins-Bold.ttf");
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .contenedorCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 6em;
+
+    transition: transform 0.5s ease, opacity 0.5s ease; 
+  }
+  .miniTituloCarousel {
+    color: #fff;
+    font-family: "Poppins-Regular";
+    font-size: 1em;
+    font-style: normal;
+    line-height: 150%;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+    opacity: 0.6;
+  }
+  .tituloCarousel {
+    color: #fff;
+    font-family: "Bebas";
+    font-size: 4em;
+    font-style: normal;
+    line-height: 100%;
+  }
+  .subtituloCarousel {
+    color: #fff;
+    font-family: "Poppins-Light";
+    font-size: 1em;
+    font-style: normal;
+    line-height: 160%;
+  }
+  .subtituloCarouselDos {
+    color: #fff;
+    font-family: "Poppins-Medium";
+    font-size: 1em;
+    font-style: normal;
+    line-height: 160%;
+  }
+  .contenedorTextosCarousel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: center;
+  }
+  .contenedorCarouselUno {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+  }
+  .contenedorImgCarouselUno {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .contenedorRocaCarousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    animation: float 3s ease-in-out infinite;
+    position: relative;
+    z-index: 1;
+  }
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+}

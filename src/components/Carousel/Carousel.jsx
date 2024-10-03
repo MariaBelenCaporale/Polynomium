@@ -1,34 +1,75 @@
-import './styles.css';
-import Roca from '../../images/roca.png';
-import Moneda from '../../images/coin.png';
+import "./styles.css";
+// import KeyboardArrowLeftRoundedIcon from '@mui/icons-material/KeyboardArrowLeftRounded';
+// import KeyboardArrowRightRoundedIcon from '@mui/icons-material/KeyboardArrowRightRounded';
+import CardCarousel from "../CardCarousel/CardCarousel";
+
+import "swiper/swiper-bundle.css"; 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, EffectCoverflow } from "swiper/modules";
 
 const Carousel = () => {
-    return (
-        <section className='sectionCarousel'>
-            <div className='contenedorCarouselTotal'>
-                <div className='contenedorCarouselUno'>
-                <div>
-            <button className='btnCarousel'></button>
-            </div>
-                <div className='contenedorImgCarouselUno'>
-                    <img src={Moneda} alt='Imagen de una moneda de Megapix' />
-                </div>
-                <div className='contenedorTextosCarousel'>
-                    <p className='miniTituloCarousel'>Proyetos</p>
-                    <h2 className='tituloCarousel'>MEGAPIX</h2>
-                    <p className='subtituloCarouselDos'>Revolucionando los Pagos con PIX.</p>
-                    <p className='subtituloCarousel'>Forjamos un ambiente donde los comerciantes prosperan y los turistas disfrutan de pagos sin complicaciones, derribando barreras y construyendo conexiones sin fronteras.</p>
-                </div>
-                <div>
-            <button className='btnCarousel'></button>
-            </div>
-                </div>
-                <div className='contenedorRocaCarousel'>
-                    <img src={Roca} alt='Imagen de una roca flotando' />
-                </div>
-            </div>
-        </section>
-    )
+  return (
+    <section className="sectionCarousel">
+      {/* <button className='btnCarousel'>
+                <KeyboardArrowLeftRoundedIcon />
+            </button> */}
+      <div className="fraseFondo">
+        <h2 className="fraseFondoTexto">Nuestros productos</h2>
+      </div>
+
+      <Swiper
+        modules={[Navigation, Pagination, EffectCoverflow]}
+        navigation
+        pagination={{ clickable: true }}
+        loop={true}
+        effect="coverflow"
+        grabCursor={true}
+        centeredSlides={true}
+        spaceBetween={300}
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 10,
+          depth: 800,
+          modifier: 1,
+          slideShadows: false,
+        }}
+        slidesPerView={1}
+      >
+        <SwiperSlide>
+          <CardCarousel
+            miniTitulo="Proyectos"
+            titulo="Megapix"
+            textoUno={"Revolucionando los Pagos con PIX"}
+            texto={
+              "Forjamos un ambiente donde los comerciantes prosperan y los turistas disfrutan de pagos sin complicaciones, derribando barreras y construyendo conexiones sin fronteras."
+            }
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CardCarousel
+            miniTitulo="Proyectos"
+            titulo="Assiria"
+            textoUno={"Plataformas Igaming"}
+            texto={
+              "Creamos universos virtuales donde el igaming no es solo entretenimiento, sino una experiencia inmersiva y transformadora."
+            }
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CardCarousel 
+               miniTitulo='Proyectos'
+               titulo='Fluence'
+               textoUno={'Sigue al conejo'}
+               texto={'Ser parte de Fluverse implica más que unirse a una plataforma: es adentrarse en un universo de educación financiera.'}
+          />
+        </SwiperSlide>
+      </Swiper>
+
+      {/* <button className='btnCarousel'>
+                <KeyboardArrowRightRoundedIcon />
+            </button> */}
+    </section>
+  );
 };
 
 export default Carousel;
