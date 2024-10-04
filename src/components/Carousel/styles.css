@@ -20,7 +20,36 @@
 }
 
 
-@media (min-width: 1200px) and (max-width: 1440px) {
+@media (min-width: 1200px) and (max-width: 1440px) {  
+  .containerLuzUno {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+  }
+  
+  .luzUno,
+  .luzUnoA {
+    border-radius: 100px;
+    filter: blur(100px);
+    position: absolute;
+    width: 350px;
+    height: 350px;
+  }
+  
+  .luzUno {
+    background: rgba(0, 117, 255, 0.40); 
+    left: -190px;
+  }
+  
+  .luzUnoA {
+    background: rgba(0, 117, 255, 0.40); 
+    right: -190px;
+  }
+
   .contenedorCarouselTotal {
     display: flex;
     width: 90%;
@@ -39,38 +68,6 @@
     cursor: pointer;
     border-radius: 50%;
     color: white;
-  }
-
-  .containerLuzUno {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    overflow: hidden;
-    position: absolute;
-  }
-  .luzUno {
-    border-radius: 100px;
-    background: rgba(0, 117, 255, 0.40);
-
-    filter: blur(150px);
-    backdrop-filter: blur(114.39360046386719px);
-      position: absolute;
-      left: -190px;
-      width: 300px;
-      height: 300px;
-  }
-  .luzUnoA {
-    border-radius: 100px;
-    background: rgba(0, 117, 255, 0.40);
-
-    filter: blur(150px);
-    backdrop-filter: blur(114.39360046386719px);
-      position: absolute;
-      right: -190px;
-      width: 300px;
-      height: 300px;
   }
 
   .contenedorCarouselTotal {
@@ -100,12 +97,13 @@
     color: rgba(255, 255, 255, 0.05);
     text-align: center;
     text-shadow: 0px 4px 184px #000, 0px 4px 134px #000;
-    font-family: 'Poppins-Bold';
-    font-size: 8em;
+    font-family: 'Poppins-Medium';
+    font-size: 12em;
     font-style: normal;
     font-weight: 600;
     line-height: 100.044%;
-    width: 50%;
+    width: 100%;
+    text-align: center;
   }
 .swiper-container {
 	width: 50%;

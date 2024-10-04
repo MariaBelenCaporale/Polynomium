@@ -20,6 +20,12 @@
 }
 
 @media (min-width: 1200px) and (max-width: 1440px) {
+
+  
+
+
+
+
   .contenedorCard {
     display: flex;
     flex-direction: column;

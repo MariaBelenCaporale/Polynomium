@@ -17,7 +17,7 @@ const CardCarousel = ({ miniTitulo, titulo, textoUno, texto, imageCarousel }) =>
         </div>
       </div>
       <div className="contenedorRocaCarousel">
-        <img src={Roca} alt="Imagen de una roca flotando" />
+        <img src={Roca} className="rocaGira" alt="Imagen de una roca flotando" />
       </div>
     </div>
   );

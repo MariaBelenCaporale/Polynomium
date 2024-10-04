@@ -1,4 +1,4 @@
-import  { useRef } from 'react';
+import { useRef, useState } from 'react';
 import "./styles.css";
 import KeyboardArrowLeftRoundedIcon from '@mui/icons-material/KeyboardArrowLeftRounded';
 import KeyboardArrowRightRoundedIcon from '@mui/icons-material/KeyboardArrowRightRounded';
@@ -13,6 +13,7 @@ import { Pagination, EffectCoverflow } from "swiper/modules";
 
 const Carousel = () => {
   const swiperRef = useRef(null);
+  const [lightColor, setLightColor] = useState('blue'); 
 
   const handlePrev = () => {
     if (swiperRef.current) {
@@ -26,6 +27,22 @@ const Carousel = () => {
     }
   };
 
+  const handleSlideChange = (swiper) => { 
+    switch(swiper.realIndex) { 
+      case 0:
+        setLightColor('rgba(0, 117, 255, 0.40)'); // Megapix
+        break;
+      case 1:
+        setLightColor('rgba(126, 46, 245, 0.50)' ); // Assiria
+        break;
+      case 2:
+        setLightColor('rgba(215, 254, 98, 0.70)' ); // Fluence
+        break;
+      default:
+        setLightColor('rgba(0, 117, 255, 0.40)'); 
+    }
+  };
+
   return (
     <section className="sectionCarousel">
       <div className="contenedorCarouselTotal">
@@ -33,15 +50,17 @@ const Carousel = () => {
           <h2 className="fraseFondoTexto">Nuestros productos</h2>
         </div>
 
-        <div className="containerLuzUno">
-          <div className="luzUno"></div>
-          <div className="luzUnoA"></div>
+        <div className="containerLuzUno" >
+          <div style={{ backgroundColor: lightColor }} className="luzUno"></div>
+          <div style={{ backgroundColor: lightColor }} className="luzUnoA"></div>
         </div>
+
         <div className='containerBtnCarousel'>
-        <button className='btnCarousel' onClick={handlePrev}>
-          <KeyboardArrowLeftRoundedIcon />
-        </button>
+          <button className='btnCarousel' onClick={handlePrev}>
+            <KeyboardArrowLeftRoundedIcon />
+          </button>
         </div>
+        
         <Swiper
           ref={swiperRef}
           modules={[Pagination, EffectCoverflow]}
@@ -51,6 +70,7 @@ const Carousel = () => {
           grabCursor={true}
           centeredSlides={true}
           spaceBetween={600}
+          onSlideChange={handleSlideChange} 
           coverflowEffect={{
             rotate: 0,
             stretch: 10,
@@ -61,7 +81,7 @@ const Carousel = () => {
           slidesPerView={1}
         >
           <SwiperSlide>
-            <CardCarousel
+            <CardCarousel 
               miniTitulo="Proyectos"
               titulo="Megapix"
               textoUno="Revolucionando los Pagos con PIX"
@@ -94,9 +114,9 @@ const Carousel = () => {
         </Swiper>
 
         <div className='containerBtnCarousel'>
-        <button className='btnCarousel' onClick={handleNext}>
-          <KeyboardArrowRightRoundedIcon />
-        </button>
+          <button className='btnCarousel' onClick={handleNext}>
+            <KeyboardArrowRightRoundedIcon />
+          </button>
         </div>
       </div>
     </section>
