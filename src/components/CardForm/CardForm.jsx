@@ -16,7 +16,7 @@ const CardForm = () => {
             </div>
           </div>
 
-          <form onSubmit={""}>
+          <form className='formulario' onSubmit={""}>
             <div className="filaUnoForm">
             <div className="labelInput">
               <label htmlFor="name" className="labelTexto">Nombre completo</label>
@@ -37,7 +37,7 @@ const CardForm = () => {
 
             <div className="filaUnoForm">
             <div className="labelInput">
-              <label htmlFor="name" className="labelTexto">Teléfono<span>(Opcional)</span></label>
+              <label htmlFor="name" className="labelTexto">Teléfono <span className="opcionForm">(Opcional)</span></label>
               <input type="number" id="name" className="inputForm" value={""} onChange={""} required />
             </div>
 
@@ -55,8 +55,8 @@ const CardForm = () => {
             </div>
             <div className="filaUnoForm">
             <div className="labelInput">
-              <label htmlFor="name" className="labelTexto">Teléfono<span>(Opcional)</span></label>
-              <input type="number" id="name" className="inputForm" value={""} onChange={""} required />
+              <label htmlFor="name" className="labelTexto">Desarrollar necesidad <span className="opcionForm">(Opcional)</span></label>
+              <input type="text" id="necesidad" className="inputForm" value={""} onChange={""} required />
             </div>
 
             
