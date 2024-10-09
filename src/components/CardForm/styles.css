@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "Bebas";
+    src: url("../../fonts/BebasNeue-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Poppins-Regular";
+    src: url("../../fonts/Poppins/Poppins-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Poppins-Bold";
+    src: url("../../fonts/Poppins/Poppins-Bold.ttf");
+  }
+  @font-face {
+    font-family: "Poppins-Light";
+    src: url("../../fonts/Poppins/Poppins-Light.ttf");
+  }
+
+
+  .sectionForm {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .containerForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+  }
+.formBack {
+    padding: 50px;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.10);
+    background-blend-mode: soft-light, normal;
+    box-shadow: 0px -4px 2px 0px rgba(0, 0, 0, 0.05) inset;
+    backdrop-filter: blur(20px);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.textForm {
+    color: #FFF;
+    font-family: 'Poppins-Light';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.contieneTextForm {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.contenedorButtonForm {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+.internoForm {
+    width: 60%;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+.labelTexto {
+    color: #FFF;
+font-family: 'Poppins-Light';
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.16px;
+}
+.labelInput {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.filaUnoForm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+}
+.inputForm {
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.10);
+    display: flex;
+    width: 100%;
+    height: 40px;
+    /* padding: 16px 20px; */
+    align-items: flex-start;
+}

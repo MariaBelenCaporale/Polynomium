@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "Bebas";
+    src: url("../../fonts/BebasNeue-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Poppins-Regular";
+    src: url("../../fonts/Poppins/Poppins-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Poppins-Bold";
+    src: url("../../fonts/Poppins/Poppins-Bold.ttf");
+  }
+  @font-face {
+    font-family: "Poppins-Light";
+    src: url("../../fonts/Poppins/Poppins-Light.ttf");
+  }
+
+@media (min-width: 1201px) and (max-width: 1440px) {
+  .btnForm {
+    display: flex;
+    width: 251px;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    cursor: pointer;
+
+    color: #FFF;
+    text-align: center;
+    font-family: 'Poppins-Light';
+    font-size: 1.2em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
