@@ -1,4 +1,5 @@
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
+import ButtonFirst from "../ButtonFirst/ButtonFirst";
 import "./styles.css";
 
 const CardForm = () => {
@@ -61,7 +62,10 @@ const CardForm = () => {
 
             
             </div>
-            <button type="submit">Enviar</button>
+            <ButtonFirst
+              titleButton="Enviar" 
+            />
+            
           </form>
         </div>
       </div>

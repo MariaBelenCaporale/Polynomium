@@ -17,6 +17,7 @@
     padding: 30px;
     border-radius: 8px;
     position: relative;
+    ;
   }
   
   .close-button {
@@ -29,4 +30,3 @@
     font-size: 1em;
     color: white;
   }
-  

@@ -54,7 +54,7 @@ const CardCarousel = ({
             <img
               src={imageCarouselMegapix}
               alt="Imagen Megapix"
-              className="image"
+              className="imgMegapix"
             />
           )}
           {imageCarouselMegaUno && (
@@ -68,7 +68,7 @@ const CardCarousel = ({
             <img
               src={imageCarouselFluence}
               alt="Imagen Fluence"
-              className="image"
+              className="imgFluence"
             />
           )}
           {imageFluenceDos && (

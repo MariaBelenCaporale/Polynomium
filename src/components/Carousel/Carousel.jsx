@@ -36,16 +36,16 @@ const Carousel = () => {
   const handleSlideChange = (swiper) => { 
     switch(swiper.realIndex) { 
       case 0:
-        setLightColor('rgba(0, 117, 255, 0.40)'); // Megapix
+        setLightColor('rgb(0 117 255 / 24%)'); // Megapix
         break;
       case 1:
-        setLightColor('rgba(126, 46, 245, 0.50)' ); // Assiria
+        setLightColor('rgb(126 46 245 / 19%)' ); // Assiria
         break;
       case 2:
-        setLightColor('rgba(215, 254, 98, 0.70)' ); // Fluence
+        setLightColor('rgb(215 254 98 / 22%)' ); // Fluence
         break;
       default:
-        setLightColor('rgba(0, 117, 255, 0.40)'); 
+        setLightColor('rgb(0 117 255 / 24%)'); 
     }
   };
 
@@ -130,8 +130,10 @@ const Carousel = () => {
             />
           </SwiperSlide>
           <SwiperSlide>
-            <CardCarousel 
+            <CardCarousel  
               titleButton='Ver más'
+              onButtonClick={() => openPopup('https://player.vimeo.com/video/1019525364?share=copy')}
+
               miniTitulo='Proyectos'
               titulo='Fluence'
               textoUno={'Sigue al conejo'}
