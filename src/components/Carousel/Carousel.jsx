@@ -5,13 +5,19 @@ import KeyboardArrowRightRoundedIcon from '@mui/icons-material/KeyboardArrowRigh
 import CardCarousel from "../CardCarousel/CardCarousel";
 import Moneda from '../../images/coin.png';
 import Ruleta from '../../images/ruleta.png';
+import FichaUno from '../../images/fichaUno.png';
+import FichaDos from '../../images/fichaDos.png';
 import Fluence from '../../images/fluence.png';
+import Popup from '../Popup/Popup';
 
 import "swiper/swiper-bundle.css"; 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, EffectCoverflow } from "swiper/modules";
 
+
 const Carousel = () => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [videoUrl, setVideoUrl] = useState('');
   const swiperRef = useRef(null);
   const [lightColor, setLightColor] = useState('blue'); 
 
@@ -41,6 +47,16 @@ const Carousel = () => {
       default:
         setLightColor('rgba(0, 117, 255, 0.40)'); 
     }
+  };
+
+  const openPopup = (url) => {
+    setVideoUrl(url);
+    setIsPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setIsPopupOpen(false);
+    setVideoUrl('');
   };
 
   return (
@@ -82,33 +98,47 @@ const Carousel = () => {
         >
           <SwiperSlide>
             <CardCarousel 
+              titleButton='Ver más'
+              // onButtonClick={() => openPopup('https://player.vimeo.com/video/1019520949?share=copy')}
               miniTitulo="Proyectos"
               titulo="Megapix"
               textoUno="Revolucionando los Pagos con PIX"
               texto={
                 "Forjamos un ambiente donde los comerciantes prosperan y los turistas disfrutan de pagos sin complicaciones, derribando barreras y construyendo conexiones sin fronteras."
               }
-              imageCarousel={Moneda}
+              imageCarouselMegapix={Moneda}
+              imageCarouselMega={null}
+              imageCarouselMegaUno={null}
+
             />
           </SwiperSlide>
           <SwiperSlide>
             <CardCarousel
+              titleButton='Ver más'
+              onButtonClick={() => openPopup('https://player.vimeo.com/video/1019520949?share=copy')}
+              
               miniTitulo="Proyectos"
               titulo="Assiria"
               textoUno="Plataformas Igaming"
               texto={
                 "Creamos universos virtuales donde el igaming no es solo entretenimiento, sino una experiencia inmersiva y transformadora."
               }
-              imageCarousel={Ruleta}
+              imageAssiriaUno={FichaDos}
+              imageCarouselAssiria={Ruleta}
+              imageAssiriaDos={FichaUno}
+              
             />
           </SwiperSlide>
           <SwiperSlide>
             <CardCarousel 
+              titleButton='Ver más'
               miniTitulo='Proyectos'
               titulo='Fluence'
               textoUno={'Sigue al conejo'}
               texto={'Ser parte de Fluverse implica más que unirse a una plataforma: es adentrarse en un universo de educación financiera.'}
-              imageCarousel={Fluence}
+              imageCarouselFluence={Fluence}
+              imageFluenceDos={null}
+              imageCarouselDos={null}
             />
           </SwiperSlide>
         </Swiper>
@@ -119,6 +149,7 @@ const Carousel = () => {
           </button>
         </div>
       </div>
+      {isPopupOpen && <Popup videoUrl={videoUrl} onClose={closePopup} />}
     </section>
   );
 };
