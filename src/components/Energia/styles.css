@@ -1,0 +1,38 @@
+
+
+.imgBola, .rayo, .rayoDos, .luzAzul {
+    position: absolute;
+}
+
+
+.contieneBola {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    height: 100vh;
+}
+.sectionEnergia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+.imgBola {
+    width: 100%;
+    z-index: 1;
+}
+.rayo {
+    width: 70%;
+}
+.rayoDos {
+    width: 80%;
+    rotate: 240deg;
+}
+}

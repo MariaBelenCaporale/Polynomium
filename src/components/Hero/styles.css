@@ -3,16 +3,16 @@
     src: url("../../fonts/BebasNeue-Regular.ttf");
   }
   @font-face {
-    font-family: "Poppins";
-    src: url("../../fonts/Poppins/Poppins-Black.ttf");
-    src: url("../../fonts/Poppins/Poppins-Bold.ttf");
-    src: url("../../fonts/Poppins/Poppins-ExtraBold.ttf");
-    src: url("../../fonts/Poppins/Poppins-ExtraLight.ttf");
-    src: url("../../fonts/Poppins/Poppins-Light.ttf");
-    src: url("../../fonts/Poppins/Poppins-Medium.ttf");
+    font-family: "Poppins-Regular";
     src: url("../../fonts/Poppins/Poppins-Regular.ttf");
-    src: url("../../fonts/Poppins/Poppins-SemiBold.ttf");
-    src: url("../../fonts/Poppins/Poppins-Thin.ttf");
+  }
+  @font-face {
+    font-family: "Poppins-Bold";
+    src: url("../../fonts/Poppins/Poppins-Bold.ttf");
+  }
+  @font-face {
+    font-family: "Poppins-Light";
+    src: url("../../fonts/Poppins/Poppins-Light.ttf");
   }
 
 .tituloHero, .tituloHeroAzul {
@@ -32,6 +32,7 @@
     top: 300px;
     right: -500px;
     rotate: 20deg;
+    z-index: 1;
 }
 .sectionHero {
     position: relative;

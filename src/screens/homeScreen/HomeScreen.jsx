@@ -1,3 +1,4 @@
+
 import About from '../../components/About/About';
 import CardForm from '../../components/CardForm/CardForm';
 import Carousel from '../../components/Carousel/Carousel';
@@ -6,14 +7,14 @@ import Hero from '../../components/Hero/Hero';
 import Necesidad from '../../components/Necesidad/Necesidad';
 import Slogan from '../../components/Slogan/Slogan';
 import Soluciones from '../../components/Soluciones/Soluciones';
-import Bola from '../../images/rock.gif';
 import './styles.css';
 import Roca from '../../images/roca.png';
-import Rayomov from '../../images/rayomov.gif';
 import NavBar from '../../components/Navbar/NavBar';
-
+import Energia from '../../components/Energia/Energia';
 
 const HomeScreen = () => {
+
+
     return (
         <section className='contenedorHome'>
             <div className='contieneRocaHome'>
@@ -21,12 +22,9 @@ const HomeScreen = () => {
             </div>
             <NavBar />
             <Hero />
-            <div className='contieneBola'>
-            <img className='imgBola' src={Bola} alt='bola de energía' />
-            <img className='rayo' src={Rayomov} alt='rayos' />
-            <img className='rayoDos' src={Rayomov} alt='rayos' />
-            <span className='luzAzul'></span>
-            </div>
+            <span className="luzAzulDos"></span>
+            <span className="luzAzul"></span>
+            <Energia />
             <About />
             <Necesidad />
             <Soluciones />
@@ -35,7 +33,7 @@ const HomeScreen = () => {
             <Slogan />
             <Footer />
         </section>
-    )
+    );
 };
 
 export default HomeScreen;

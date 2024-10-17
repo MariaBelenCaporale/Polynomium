@@ -1,12 +1,4 @@
 
-.contieneBola {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    position: relative;
-    height: 100vh;
-}
 .contenedorHome {
     display: flex;
     flex-direction: column;
@@ -22,30 +14,25 @@
     top: -240px;
     rotate: 140deg;
 }
-.imgBola, .rayo, .rayoDos, .luzAzul {
-    position: absolute;
-}
-.luzAzul {
+.luzAzul, .luzAzulDos {
     background-color: blue;
     border-radius: 100px;
     position: absolute;
-    width: 450px;
-    height: 450px;
+    width: 350px;
+    height: 350px;
     filter: blur(100px);
-    box-shadow: 0 0 133.459px #0075FF, 0 0 66.73px #0075FF, 0 0 19.066px;
+    box-shadow: 0 0 133.459px #0077ff87, 0 0 66.73px #0077ff7e, 0 0 19.066px;
+}
+.luzAzul {
+    left: 100%;
+    top: 10%;
+}
+.luzAzulDos {
+    right: 100%;
+    top: 20%;
 }
 
 
 @media (min-width: 1200px) and (max-width: 1440px) {
-    .imgBola {
-        width: 100%;
-        z-index: 1;
-    }
-    .rayo {
-        width: 70%;
-    }
-    .rayoDos {
-        width: 80%;
-        rotate: 240deg;
-    }
+
 }
