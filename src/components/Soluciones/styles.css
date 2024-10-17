@@ -22,6 +22,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    z-index: 1;
   }
   .contenedorSolucionesTotal {
     display: flex;
