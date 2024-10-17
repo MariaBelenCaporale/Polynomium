@@ -17,11 +17,9 @@
 
 .contenedorRocaSlogan {
   position: absolute;
-  right: -500px;
-  bottom: 100px;
 }
 .contenedorRocaSlogan img {
-  width: 80%;
+  width: 100%;
 }
 .sloganTexto {
     color: #FFF;
@@ -81,4 +79,11 @@
     .contenedorImgAdn img {
         width: 10%;
     }
+    .contenedorRocaSlogan {
+      right: -500px;
+      bottom: 100px;
+    }
+    .contenedorRocaSlogan img {
+      width: 80%;
+    } 
 }
