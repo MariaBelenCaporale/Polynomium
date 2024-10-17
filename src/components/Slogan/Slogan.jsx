@@ -1,10 +1,13 @@
-
+import Roca from '../../images/rocaDos.png';
 import './styles.css';
 import Adn from '../../images/adn.png';
 
 const Slogan = () => {
     return (
         <section className='sectionSlogan'>
+            <div className='contenedorRocaSlogan'>
+                <img src={Roca} alt='rica flotando' />
+            </div>
             <div className='contenedorImgAdn'>
                 <img src={Adn} alt='logo 3d' />
             </div>

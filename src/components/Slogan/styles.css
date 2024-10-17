@@ -15,7 +15,14 @@
     src: url("../../fonts/Poppins/Poppins-Light.ttf");
   }
 
-
+.contenedorRocaSlogan {
+  position: absolute;
+  right: -500px;
+  bottom: 100px;
+}
+.contenedorRocaSlogan img {
+  width: 80%;
+}
 .sloganTexto {
     color: #FFF;
     text-align: center;
@@ -30,7 +37,8 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 50vh;
+    height: 80vh;
+    position: relative;
 }
 .contenedorTextoSlogan {
     display: flex;
