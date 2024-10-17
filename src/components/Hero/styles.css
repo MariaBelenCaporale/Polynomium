@@ -15,8 +15,11 @@
     src: url("../../fonts/Poppins/Poppins-Thin.ttf");
   }
 
-.tituloHero {
+.tituloHero, .tituloHeroAzul {
     font-family: 'Poppins-Medium';
+    text-align: center;
+    font-style: normal;
+    line-height: 100.044%; 
 }
 .contenedorRocaUno {
     position: absolute;
@@ -33,6 +36,16 @@
 .sectionHero {
     position: relative;
 }
+.subtituloHero {
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 0px 14px rgba(255, 255, 255, 0.574);
+    font-family: "Bebas";
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.5px;
+}
 
 @media (min-width: 1200px) and (max-width: 1440px) {
     .sectionHero {
@@ -43,30 +56,22 @@
         margin: 80px 0px;
     }
     .containerTextosHero {
-        width: 60%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 1em;
     }
+    .tituloHeroAzul {
+        color: #0075FF;
+        font-size: 4em;
+    }
     .tituloHero {
         color: #FFF;
-        text-align: center;
-        text-shadow: 0px 4px 134px #000;
-        font-size: 4.2em;
-        font-style: normal;
-        line-height: 100.044%; 
+        font-size: 4em;
     }
     .subtituloHero {
-        color: #FFF;
-        text-align: center;
-        text-shadow: 0px 4px 34px rgba(255, 255, 255, 0.80);
-        font-family: "Bebas";
         font-size: 2.5em;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 2.5px;
     }
 }

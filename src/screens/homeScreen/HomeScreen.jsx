@@ -9,6 +9,7 @@ import Soluciones from '../../components/Soluciones/Soluciones';
 import Bola from '../../images/rock.gif';
 import './styles.css';
 import Roca from '../../images/roca.png';
+import Rayomov from '../../images/rayomov.gif';
 import NavBar from '../../components/Navbar/NavBar';
 
 
@@ -22,6 +23,9 @@ const HomeScreen = () => {
             <Hero />
             <div className='contieneBola'>
             <img className='imgBola' src={Bola} alt='bola de energía' />
+            <img className='rayo' src={Rayomov} alt='rayos' />
+            <img className='rayoDos' src={Rayomov} alt='rayos' />
+            <span className='luzAzul'></span>
             </div>
             <About />
             <Necesidad />

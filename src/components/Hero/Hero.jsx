@@ -11,8 +11,10 @@ const Hero = () => {
                 <img src={RocaUno} alt='imagen de roca flotante' />
             </div>
             <div className='containerTextosHero'>
-                <h1 className='tituloHero'>No esperamos el futuro; lo estamos creando hoy.</h1>
-                <p className='subtituloHero'>POLYNOMIUM, CREADORES DE SOLUCIONES TECNOLÓGICAS</p>
+                <h2 className='tituloHeroAzul'>Innovación sin límites,</h2>
+                <h2 className='tituloHero'> no esperamos el futuro;</h2>
+                <h2 className='tituloHero'> lo estamos creando hoy.</h2>
+                <p className='subtituloHero'>ADN tecnológico en constante evolución</p>
             </div>
         </section>
     )
