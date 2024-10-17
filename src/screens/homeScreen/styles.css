@@ -1,19 +1,29 @@
 
-@media (min-width: 1200px) and (max-width: 1440px) {
 .contieneBola {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
 }
-.imgBola {
-    width: 80%;
-}
 .contenedorHome {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5em;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    position: relative;
 }
+.contieneRocaHome {
+    position: absolute;
+    top: -240px;
+    rotate: 140deg;
+}
+
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+    .imgBola {
+        width: 80%;
+    }
 }

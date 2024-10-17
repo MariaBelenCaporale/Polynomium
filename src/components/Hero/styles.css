@@ -18,6 +18,21 @@
 .tituloHero {
     font-family: 'Poppins-Medium';
 }
+.contenedorRocaUno {
+    position: absolute;
+    top: 0px;
+    left: -500px;
+    rotate: 20deg;
+}
+.contenedorRocaDos {
+    position: absolute;
+    top: 300px;
+    right: -500px;
+    rotate: 20deg;
+}
+.sectionHero {
+    position: relative;
+}
 
 @media (min-width: 1200px) and (max-width: 1440px) {
     .sectionHero {
@@ -39,7 +54,7 @@
         color: #FFF;
         text-align: center;
         text-shadow: 0px 4px 134px #000;
-        font-size: 4.9em;
+        font-size: 4.2em;
         font-style: normal;
         line-height: 100.044%; 
     }
@@ -48,7 +63,7 @@
         text-align: center;
         text-shadow: 0px 4px 34px rgba(255, 255, 255, 0.80);
         font-family: "Bebas";
-        font-size: 3em;
+        font-size: 2.5em;
         font-style: normal;
         font-weight: 700;
         line-height: normal;

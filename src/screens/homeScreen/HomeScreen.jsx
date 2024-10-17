@@ -8,12 +8,17 @@ import Slogan from '../../components/Slogan/Slogan';
 import Soluciones from '../../components/Soluciones/Soluciones';
 import Bola from '../../images/rock.gif';
 import './styles.css';
+import Roca from '../../images/roca.png';
+import NavBar from '../../components/Navbar/NavBar';
 
 
 const HomeScreen = () => {
     return (
         <section className='contenedorHome'>
-
+            <div className='contieneRocaHome'>
+                <img src={Roca} alt='roca flotante' />
+            </div>
+            <NavBar />
             <Hero />
             <div className='contieneBola'>
             <img className='imgBola' src={Bola} alt='bola de energía' />
