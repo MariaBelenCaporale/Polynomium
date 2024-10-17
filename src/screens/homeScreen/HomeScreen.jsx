@@ -1,8 +1,10 @@
 import About from '../../components/About/About';
 import CardForm from '../../components/CardForm/CardForm';
 import Carousel from '../../components/Carousel/Carousel';
+import Footer from '../../components/Footer/Footer';
 import Hero from '../../components/Hero/Hero';
 import Necesidad from '../../components/Necesidad/Necesidad';
+import Slogan from '../../components/Slogan/Slogan';
 import Soluciones from '../../components/Soluciones/Soluciones';
 import Bola from '../../images/rock.gif';
 import './styles.css';
@@ -21,6 +23,8 @@ const HomeScreen = () => {
             <Soluciones />
             <Carousel />
             <CardForm />
+            <Slogan />
+            <Footer />
         </section>
     )
 };

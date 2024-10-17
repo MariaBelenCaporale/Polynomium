@@ -48,7 +48,9 @@ const CardCarousel = ({
           {imageCarouselMega && (
             <img 
               src={imageCarouselMega} 
-              alt="Imagen Mega" />
+              alt="Imagen Mega" 
+              className="imgMega"
+              />
           )}
           {imageCarouselMegapix && (
             <img

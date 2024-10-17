@@ -5,6 +5,7 @@ import KeyboardArrowRightRoundedIcon from '@mui/icons-material/KeyboardArrowRigh
 import CardCarousel from "../CardCarousel/CardCarousel";
 import Moneda from '../../images/coin.png';
 import Ruleta from '../../images/ruleta.png';
+import Diamante from '../../images/pixdiamante.png';
 import FichaUno from '../../images/fichaUno.png';
 import FichaDos from '../../images/fichaDos.png';
 import Fluence from '../../images/fluence.png';
@@ -107,7 +108,7 @@ const Carousel = () => {
                 "Forjamos un ambiente donde los comerciantes prosperan y los turistas disfrutan de pagos sin complicaciones, derribando barreras y construyendo conexiones sin fronteras."
               }
               imageCarouselMegapix={Moneda}
-              imageCarouselMega={null}
+              imageCarouselMega={Diamante}
               imageCarouselMegaUno={null}
 
             />
@@ -126,6 +127,7 @@ const Carousel = () => {
               imageAssiriaUno={FichaDos}
               imageCarouselAssiria={Ruleta}
               imageAssiriaDos={FichaUno}
+              
               
             />
           </SwiperSlide>

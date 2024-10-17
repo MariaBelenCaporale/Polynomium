@@ -21,7 +21,7 @@
     align-items: center;
     cursor: pointer;
     z-index: 99;
-    width: 100%;
+    width: auto;
     justify-content: center;
 }
 
@@ -77,21 +77,21 @@
 }
 
 
-@media (min-width: 360px) and (max-width: 576px){
-    .containerLanguage {
-        width: 100%;
-    }
+@media (max-width: 576px){
     .dropdownMenu {
         width: auto;
         top: 90%;
     }
 }
 @media (min-width: 577px) and (max-width: 768px) {
-    .containerLanguage {
-        width: 100%;
-    }
+    
 }
 @media (min-width: 993px) and (max-width: 1200px) {
+    .dropdownMenu {
+        top: 70%;
+    }
+}
+@media (min-width: 1201px) and (max-width: 1440px) {
     .dropdownMenu {
         top: 70%;
     }

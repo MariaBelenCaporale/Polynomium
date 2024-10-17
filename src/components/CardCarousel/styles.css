@@ -105,12 +105,19 @@
   .imgAssiria, .imgFluence, .imgMegapix {
     animation: floatPrincipal 10s ease-in-out infinite;
     display: flex;
+    
   }
   .imgAssiria, .imgFluence {
     width: 60%;
   }
   .imgMegapix {
     width: 40%;
+  }
+  .imgMega {
+    width: 50px;
+    animation: floatFichaUno 5s ease-in-out infinite; 
+    position: relative;
+    top: -80px;
   }
   .fichaUno {
     animation: floatFichaUno 5s ease-in-out infinite; 
@@ -122,6 +129,7 @@
     position: relative;
     top: -100px;
   }
+
 
   @keyframes floatFicha {
     0% {

@@ -1,0 +1,221 @@
+@font-face {
+    font-family: "Bebas";
+    src: url("../../fonts/BebasNeue-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Poppins-Regular";
+    src: url("../../fonts/Poppins/Poppins-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Poppins-Bold";
+    src: url("../../fonts/Poppins/Poppins-Bold.ttf");
+  }
+  @font-face {
+    font-family: "Poppins-Light";
+    src: url("../../fonts/Poppins/Poppins-Light.ttf");
+  }
+
+  .containerTextImportant {
+    display: flex;
+    align-items: center;
+    z-index: 9;
+    position: relative;
+    top: 400px;
+    justify-content: center;
+    width: 100%;
+  }
+  .containerImportant {
+    width: 85%;
+    margin-bottom: 2em;
+  }
+  .textImportant {
+    color: #BEBEBE;
+    font-family: 'Poppins-Light';
+    font-size: .8em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+.containerFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+.columnOneFooterRed {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    gap: 1em;
+}
+.red {
+    color: white;
+}
+.red:hover {
+    color: #62FEE2;
+}
+.columnOneFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: auto;
+    align-items: center;
+}
+.containerTotal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+.navlink {
+    text-decoration: none; 
+    color: white;
+    text-align: start;
+    font-family: "Poppins-Regular";
+    width: 100%;
+}
+.containerLogoFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+}
+.textNavOne {
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0px;
+}
+.textNavThree  {
+    font-size: 1em;
+    font-style: normal;
+    font-family: "Poppins-Regular";
+    font-weight: 200;
+    line-height: normal;
+    margin: 0px;
+    text-align: start;
+    width: 100%;
+}
+.textNavComunidad {
+    color: white;
+    font-size: 1em;
+    font-style: normal;
+    font-family: "Poppins-Regular";
+    font-weight: 200;
+    line-height: normal;
+    margin: 0px;
+    text-align: start;
+    width: 100%;
+}
+.textNavTwo {
+    color: #FFF;
+    font-family: "Poppins-Regular";
+    font-size: .8em;
+    font-style: normal;
+    line-height: normal;
+    margin: 0px;
+    width: 100%;
+}
+.navlink:hover {
+    color: #62FEE2;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footerProduct {
+    color: #FFF;
+    font-family: "Poppins-Regular";
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 10px;
+}
+.footerOrder {
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(20px);
+    height: 250px;
+    z-index: 1;
+    padding: 40px 60px;
+    width: 80%;
+    gap: 3em;
+    position: absolute;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    padding: 60px;
+    justify-content: space-between;
+}
+.containerFormas {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    height: auto;
+}
+.formas {
+    width: 100%;
+}
+.titleFooter {
+    color: #FFF;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.logoFooter {
+    width: 100%;
+}
+
+
+
+@media (min-width: 1201px) and (max-width: 1440px )  {
+    .listResponsive {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-evenly;
+        width: 100%;
+        gap: 2em;
+    }
+    .logoFooter {
+        width: 70%;
+    }
+    .footerOrder {
+        padding: 40px 60px;
+        width: 80%;
+        gap: 3em;
+        position: absolute;
+    }
+    .lineResponsive {
+        display: none;
+    }
+    .columnOneFooterRed {
+        justify-content: center;
+    }
+    .textNavThree {
+        font-weight: 500;
+    }
+    .containerTotal {
+        align-items: flex-start;
+    }
+    .textNavComunidad {
+        text-align: center;
+    }
+    .listResponsive {
+        gap: 7em;
+    }
+    .containerTextImportant {
+        top: 350px;
+    }
+}

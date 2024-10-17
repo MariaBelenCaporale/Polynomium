@@ -1,5 +1,6 @@
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import ButtonFirst from "../ButtonFirst/ButtonFirst";
+import Diamante from '../../images/diamante.png';
 import "./styles.css";
 
 const CardForm = () => {
@@ -68,6 +69,12 @@ const CardForm = () => {
             
           </form>
         </div>
+      </div>
+      <div className="containerDiamanteForm"> 
+        <img src={Diamante} alt="imagen de diamante" />
+      </div>
+      <div className="containerDiamanteFormDos"> 
+        <img src={Diamante} alt="imagen de diamante" />
       </div>
     </section>
   );

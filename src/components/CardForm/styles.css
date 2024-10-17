@@ -16,14 +16,37 @@
   }
 
 
+  .containerDiamanteForm, .containerDiamanteFormDos {
+    width: 100%;
+    display: flex;
+    position: absolute;
+  }
+
+  .containerDiamanteForm {
+    bottom: 200px;
+  }
+  .containerDiamanteFormDos {
+    z-index: 2;
+    top: 100px;
+    left: 1250px;
+  }
+  .containerDiamanteForm img {
+    width: 15%;
+  }
+  .containerDiamanteFormDos img {
+    width: 10%;
+  }
   .sectionForm {
+    overflow: hidden;
     display: flex;
     width: 100%;
     height: 100vh;
     align-items: center;
     justify-content: center;
+    position: relative;
   }
   .containerForm {
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;

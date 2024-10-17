@@ -1,4 +1,5 @@
 import LanguageSelect from '../Language/Language';
+import Logo from '../../images/logo.png';
 import './styles.css';
 import { Link } from 'react-router-dom';
 
@@ -8,7 +9,7 @@ const NavBar = () => {
         <nav className='navbar'>
       <div className="containerLogo">
         <a className="linkLogoNav" href="#top">
-          <img className="logo" src={''} alt="Logo Megapix" />
+          <img className="logo" src={Logo} alt="Logo Megapix" />
         </a>
       </div>
       <ul className='navLinks'>
