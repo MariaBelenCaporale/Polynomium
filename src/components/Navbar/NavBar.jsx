@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 const NavBar = () => {
     return (
         <nav className='navbar'>
+          <div className='contenedorNav'>
       <div className="containerLogo">
         <a className="linkLogoNav" href="#top">
           <img className="logo" src={Logo} alt="Logo Megapix" />
@@ -24,6 +25,7 @@ const NavBar = () => {
         </li>
       </ul>
       <LanguageSelect />
+      </div>
     </nav>
     )
 };

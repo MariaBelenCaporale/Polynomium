@@ -47,6 +47,21 @@
     line-height: normal;
     letter-spacing: 2.5px;
 }
+.contenedorRocaDos, .contenedorRocaUno  {
+    animation: rocaUno 5s ease-in-out infinite; 
+}
+
+@keyframes rocaUno {
+    0% {
+      transform: translateX(0px) translateY(0px);
+    }
+    50% {
+      transform: translateX(-10px) translateY(-10px);
+    }
+    100% {
+      transform: translateX(0px) translateY(0px);
+    }
+  }
 
 @media (min-width: 1200px) and (max-width: 1440px) {
     .sectionHero {

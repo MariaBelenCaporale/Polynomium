@@ -38,11 +38,19 @@
   }
   .navbar {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     padding: 40px 0px;
-    width: 90%;
+    width: 100%;
     z-index: 1;
+    background: linear-gradient(0deg, rgba(17, 17, 17, 0.00) 15.94%, #0c0c0c 66.12%);
+  }
+  .contenedorNav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .containerLogo {
     width: 100%;

@@ -4,7 +4,6 @@ import CardForm from '../../components/CardForm/CardForm';
 import Carousel from '../../components/Carousel/Carousel';
 import Footer from '../../components/Footer/Footer';
 import Hero from '../../components/Hero/Hero';
-import Necesidad from '../../components/Necesidad/Necesidad';
 import Slogan from '../../components/Slogan/Slogan';
 import Soluciones from '../../components/Soluciones/Soluciones';
 import './styles.css';
@@ -26,7 +25,6 @@ const HomeScreen = () => {
             <span className="luzAzul"></span>
             <Energia />
             <About />
-            <Necesidad />
             <Soluciones />
             <Carousel />
             <CardForm />

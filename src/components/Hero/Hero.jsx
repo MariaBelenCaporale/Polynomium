@@ -8,7 +8,7 @@ const Hero = () => {
                 <img src={RocaUno} alt='imagen de roca flotante' />
             </div>
             <div className='contenedorRocaDos'>
-                <img src={RocaUno} alt='imagen de roca flotante' />
+                <img className='rocaUnoHero' src={RocaUno} alt='imagen de roca flotante' />
             </div>
             <div className='containerTextosHero'>
                 <h2 className='tituloHeroAzul'>Innovación sin límites,</h2>
