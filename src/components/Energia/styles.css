@@ -1,10 +1,27 @@
 
-
+.imgBola {
+    z-index: 1;
+}
 .imgBola, .rayo, .rayoDos, .luzAzul {
     position: absolute;
 }
-
-
+.luzAzul, .luzAzulDos {
+    background-color: blue;
+    border-radius: 100px;
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    filter: blur(100px);
+    box-shadow: 0 0 133.459px #0077ff87, 0 0 66.73px #0077ff7e, 0 0 19.066px;
+}
+.luzAzul {
+    left: 100%;
+    top: 10%;
+}
+.luzAzulDos {
+    right: 100%;
+    top: 20%;
+}
 .contieneBola {
     display: flex;
     align-items: center;
@@ -23,10 +40,22 @@
     overflow: hidden;
 }
 
+@media (max-width: 576px) {
+    .imgBola {
+        width: 100%;
+    }
+    .luzAzul, .luzAzulDos {
+        width: 100px;
+        height: 100px;
+        filter: blur(80px);
+    }
+    .rayo, .rayoDos {
+        width: 100%;
+    }
+}
 @media (min-width: 1200px) and (max-width: 1440px) {
 .imgBola {
     width: 100%;
-    z-index: 1;
 }
 .rayo {
     width: 70%;
@@ -35,4 +64,5 @@
     width: 80%;
     rotate: 240deg;
 }
+
 }

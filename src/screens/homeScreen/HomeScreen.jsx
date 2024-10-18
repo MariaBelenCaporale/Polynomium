@@ -21,8 +21,6 @@ const HomeScreen = () => {
             </div>
             <NavBar />
             <Hero />
-            <span className="luzAzulDos"></span>
-            <span className="luzAzul"></span>
             <Energia />
             <About />
             <Soluciones />

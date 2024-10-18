@@ -27,6 +27,12 @@
     left: -500px;
     rotate: 20deg;
 }
+.tituloHero {
+  color: #FFF;
+}
+.tituloHeroAzul {
+  color: #0075FF;
+}
 .contenedorRocaDos {
     position: absolute;
     top: 300px;
@@ -36,6 +42,10 @@
 }
 .sectionHero {
     position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .subtituloHero {
     color: #FFF;
@@ -62,29 +72,43 @@
       transform: translateX(0px) translateY(0px);
     }
   }
+  .containerTextosHero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    z-index: 1;
+}
+
+
+
+@media (max-width: 576px) {
+  .contenedorRocaUno img {
+    width: 80%;
+  }
+  .containerTextosHero {
+    gap: .5em;
+  }
+  .contenedorRocaDos {
+    top: 400px;
+    right: -600px;
+  }
+  .rocaUnoHero {
+    width: 50%;
+  }
+  
+}
 
 @media (min-width: 1200px) and (max-width: 1440px) {
     .sectionHero {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         margin: 80px 0px;
     }
-    .containerTextosHero {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 1em;
-    }
     .tituloHeroAzul {
-        color: #0075FF;
         font-size: 4em;
     }
     .tituloHero {
-        color: #FFF;
         font-size: 4em;
     }
     .subtituloHero {

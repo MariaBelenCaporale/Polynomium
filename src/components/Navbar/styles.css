@@ -15,44 +15,60 @@
   src: url("../../fonts/Poppins/Poppins-Thin.ttf");
 }
 
+.link {
+  color: #fff;
+  font-family: "Poppins-Regular";
+  font-style: normal;
+  text-align: center;
+  line-height: normal;
+  text-decoration: none;
+}
+.navLinks {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3em;
+}
+.contenedorNav {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.containerLogo {
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px;
+  width: 100%;
+  z-index: 1;
+  background: linear-gradient(0deg, rgba(17, 17, 17, 0.00) 15.94%, #0c0c0c 66.12%);
+}
+
+
+@media (max-width: 576px) {
+  .navLinks {
+    display: none;
+  }
+  .logo {
+    width: 60%;
+  }
+  .navbar {
+    padding: 20px 0px;
+    background: linear-gradient(0deg, rgba(17, 17, 17, 0.00) 15.94%, #0c0c0cc7 66.12%);
+  }
+}
 @media (min-width: 1200px) and (max-width: 1440px) {
   .link {
-    color: #fff;
-    text-align: center;
-    font-family: "Poppins-Regular";
     font-size: 1em;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
-    text-decoration: none;
-  }
-  .navLinks {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    justify-content: space-between;
-    gap: 3em;
   }
   .logo {
     width: 30%;
-  }
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 0px;
-    width: 100%;
-    z-index: 1;
-    background: linear-gradient(0deg, rgba(17, 17, 17, 0.00) 15.94%, #0c0c0c 66.12%);
-  }
-  .contenedorNav {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .containerLogo {
-    width: 100%;
   }
 }

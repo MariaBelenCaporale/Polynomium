@@ -6,7 +6,8 @@ const Energia = () => {
   return (
     <section className="sectionEnergia">
       <div className="contieneBola">
-
+      <span className="luzAzulDos"></span>
+      <span className="luzAzul"></span>
         <img className="imgBola" src={Bola} alt="bola de energía" />
         <img className="rayo" src={Rayomov} alt="rayos" />
         <img className="rayoDos" src={Rayomov} alt="rayos" />
