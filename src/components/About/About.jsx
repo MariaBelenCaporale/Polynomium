@@ -1,6 +1,30 @@
+import { useState } from "react";
+import KeyboardArrowLeftRoundedIcon from '@mui/icons-material/KeyboardArrowLeftRounded';
+import KeyboardArrowRightRoundedIcon from '@mui/icons-material/KeyboardArrowRightRounded';
 import "./styles.css";
 
 const About = () => {
+  const slides = [
+    {
+      title: "Nuestra visión",
+      text: "Buscamos ser líderes en la creación de futuros digitales, impulsando a empresas y emprendedores hacia la innovación tecnológica. Nos comprometemos a que la tecnología sea accesible para todos, especialmente para las pequeñas empresas, brindando soluciones avanzadas que les permitan crecer y prosperar en un mercado en constante evolución."
+    },
+    {
+      title: "Nuestra misión",
+      text: "Proporcionamos soluciones tecnológicas innovadoras y accesibles que empoderan a empresas y emprendedores, facilitando su crecimiento y adaptación al mercado digital. Creamos plataformas que permiten a las empresas optimizar sus operaciones, expandir su alcance y transformar sus negocios."
+    }
+  ];
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  };
+
   return (
     <section className="sectionAbout" id="nosotros">
       <div className="contenedorAboutTotal">
@@ -14,27 +38,17 @@ const About = () => {
           </p>
         </div>
         <div className="contenedorColumnasAbout">
-          <div className="contanedorMyV">
-            <h3 className="misionVision">Nuestra visión</h3>
+          <div className="contenedorMyV">
+            <h3 className="misionVision">{slides[currentSlide].title}</h3>
             <p className="textosMisionVision">
-              Buscamos ser líderes en la creación de futuros digitales,
-              impulsando a empresas y emprendedores hacia la innovación
-              tecnológica. Nos comprometemos a que la tecnología sea accesible
-              para todos, especialmente para las pequeñas empresas, brindando
-              soluciones avanzadas que les permitan crecer y prosperar en un
-              mercado en constante evolución.
+            {slides[currentSlide].text}
             </p>
           </div>
-          <div className="contanedorMyV">
-            <h3 className="misionVision">Nuestra misión</h3>
-            <p className="textosMisionVision">
-              Proporcionamos soluciones tecnológicas innovadoras y accesibles
-              que empoderan a empresas y emprendedores, facilitando su
-              crecimiento y adaptación al mercado digital. Creamos plataformas
-              que permiten a las empresas optimizar sus operaciones, expandir su
-              alcance y transformar sus negocios.
-            </p>
-          </div>
+
+        </div>
+        <div className="sliderControls">
+          <button className="sliderButton" onClick={prevSlide}> <KeyboardArrowLeftRoundedIcon /> </button>
+          <button className="sliderButton" onClick={nextSlide}> <KeyboardArrowRightRoundedIcon /> </button>
         </div>
       </div>
     </section>
