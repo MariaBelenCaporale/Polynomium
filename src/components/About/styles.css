@@ -172,5 +172,7 @@
   .containerTextosAbout {
     width: 60%;
   }
-
+  .contenedorColumnasAbout {
+    height: 20vh;
+  }
 }
