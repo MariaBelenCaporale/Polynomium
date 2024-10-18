@@ -4,7 +4,7 @@ import './styles.css';
 
 const ButtonComponent = ({ titulo }) => {
     return (
-        <div>
+        <div className='btnContenedorForm'>
             <button className='btnForm'>{titulo}</button>
         </div>
     );

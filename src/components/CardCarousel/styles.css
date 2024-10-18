@@ -19,158 +19,222 @@
   src: url("../../fonts/Poppins/Poppins-Bold.ttf");
 }
 
-@media (min-width: 1200px) and (max-width: 1440px) {
-  .contenedorCard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    gap: 6em;
 
-    transition: transform 0.5s ease, opacity 0.5s ease; 
+.contenedorCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 6em;
+
+  transition: transform 0.5s ease, opacity 0.5s ease; 
+}
+.miniTituloCarousel {
+  color: #fff;
+  font-family: "Poppins-Regular";
+  font-size: 1em;
+  font-style: normal;
+  line-height: 150%;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+.tituloCarousel {
+  color: #fff;
+  font-family: "Bebas";
+  font-size: 3.5em;
+  font-style: normal;
+}
+.subtituloCarousel {
+  color: #fff;
+  font-family: "Poppins-Light";
+  font-size: 1em;
+  font-style: normal;
+  line-height: 160%;
+}
+.subtituloCarouselDos {
+  color: #fff;
+  font-family: "Poppins-Medium";
+  font-size: 1em;
+  font-style: normal;
+  line-height: 160%;
+}
+.contenedorTextosCarousel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: center;
+  gap: 2em;
+}
+.contenedorCarouselUno {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  gap: 2em;
+}
+.contenedorImgCarouselUno {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.contenedorRocaCarousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  animation: float 3s ease-in-out infinite;
+  position: relative;
+  z-index: 1;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.imgAssiria, .imgFluence, .imgMegapix {
+  animation: floatPrincipal 10s ease-in-out infinite;
+  display: flex;
+}
+.imgMega {
+  width: 50px;
+  animation: floatFichaUno 5s ease-in-out infinite; 
+  position: relative;
+  top: -80px;
+}
+.fichaUno {
+  animation: floatFichaUno 5s ease-in-out infinite; 
+  position: relative;
+  top: -80px;
+}
+.fichaDos {
+  animation: floatFicha 8s ease-in-out infinite; 
+  position: relative;
+  top: -100px;
+}
+
+@keyframes floatFicha {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes floatFichaUno {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes floatPrincipal {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(5deg);
+    }
+    50% {
+      transform: rotate(-5deg);
+    }
+    75% {
+      transform: rotate(5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+@media (max-width: 576px) {
+  .contenedorCard {
+    gap: 3em;
   }
   .miniTituloCarousel {
-    color: #fff;
-    font-family: "Poppins-Regular";
-    font-size: 1em;
-    font-style: normal;
-    line-height: 150%;
-    letter-spacing: 3.6px;
-    text-transform: uppercase;
-    opacity: 0.6;
+    font-size: .8em;
+    text-align: center;
   }
   .tituloCarousel {
-    color: #fff;
-    font-family: "Bebas";
-    font-size: 3.5em;
-    font-style: normal;
+    text-align: center;
+    font-size: 3em;
   }
   .subtituloCarousel {
-    color: #fff;
-    font-family: "Poppins-Light";
-    font-size: 1em;
-    font-style: normal;
-    line-height: 160%;
+    text-align: center;
+    font-size: .9em;
   }
   .subtituloCarouselDos {
-    color: #fff;
-    font-family: "Poppins-Medium";
-    font-size: 1em;
-    font-style: normal;
-    line-height: 160%;
+    font-size: .9em;
+    text-align: center;
   }
   .contenedorTextosCarousel {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    gap: 1em;
+  }
+  .contenedorCarouselUno {
+    gap: 1em;
     width: 100%;
-    justify-content: center;
+    flex-direction: column;
+  }
+  .imgAssiria, .imgFluence {
+    width: 40%;
+  }
+  .imgMegapix {
+    width: 30%;
+  }
+  .rocaGira {
+    width: 100%;
+  }
+  .fichaDos, .fichaUno, .imgMega {
+    display: none;
+  }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .contenedorCard {
+    gap: 6em;
+  }
+  .miniTituloCarousel {
+    font-size: 1em;
+  }
+  .tituloCarousel {
+    font-size: 3.5em;
+  }
+  .subtituloCarousel {
+    font-size: 1em;
+  }
+  .subtituloCarouselDos {
+    font-size: 1em;
+  }
+  .contenedorTextosCarousel {
     gap: 2em;
   }
   .contenedorCarouselUno {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
     gap: 2em;
-  }
-  .contenedorImgCarouselUno {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-  .contenedorRocaCarousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    animation: float 3s ease-in-out infinite;
-    position: relative;
-    z-index: 1;
-  }
-  @keyframes float {
-    0% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0px);
-    }
-  }
-  .imgAssiria, .imgFluence, .imgMegapix {
-    animation: floatPrincipal 10s ease-in-out infinite;
-    display: flex;
-    
   }
   .imgAssiria, .imgFluence {
     width: 60%;
   }
   .imgMegapix {
     width: 40%;
-  }
-  .imgMega {
-    width: 50px;
-    animation: floatFichaUno 5s ease-in-out infinite; 
-    position: relative;
-    top: -80px;
-  }
-  .fichaUno {
-    animation: floatFichaUno 5s ease-in-out infinite; 
-    position: relative;
-    top: -80px;
-  }
-  .fichaDos {
-    animation: floatFicha 8s ease-in-out infinite; 
-    position: relative;
-    top: -100px;
-  }
-
-
-  @keyframes floatFicha {
-    0% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0px);
-    }
-  }
-  @keyframes floatFichaUno {
-    0% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-5px);
-    }
-    100% {
-      transform: translateY(0px);
-    }
-  }
-  @keyframes floatPrincipal {
-      0% {
-        transform: rotate(0deg);
-      }
-      25% {
-        transform: rotate(5deg);
-      }
-      50% {
-        transform: rotate(-5deg);
-      }
-      75% {
-        transform: rotate(5deg);
-      }
-      100% {
-        transform: rotate(0deg);
-      }
-    }
-    
+  } 
 }
 
 

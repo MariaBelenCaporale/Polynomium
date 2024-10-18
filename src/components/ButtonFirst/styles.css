@@ -51,23 +51,9 @@
 
 
 
-@media (min-width: 360px) and (max-width: 576px){
-    .buttonStyle {
-        width: 249px;
-        height: 43px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1em;
-    }
-    .buttonStyle:hover {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
 
-@media (min-width: 577px)  {
+
+@media (max-width: 577px)  {
     .buttonStyle {
         width: 250px;
         height: 50px;
@@ -75,6 +61,7 @@
         align-items: center;
         justify-content: center;
         font-size: 1em;
+        margin-top: 30px;
     }
     .buttonStyle:hover {
         display: flex;
@@ -85,7 +72,7 @@
 
 
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1440px) {
     .buttonStyle {
         width: auto;
         height: 60px;

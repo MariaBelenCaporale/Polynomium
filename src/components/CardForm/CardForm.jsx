@@ -39,8 +39,8 @@ const CardForm = () => {
 
             <div className="filaUnoForm">
             <div className="labelInput">
-              <label htmlFor="name" className="labelTexto">Teléfono <span className="opcionForm">(Opcional)</span></label>
-              <input type="number" id="name" className="inputForm" value={""} onChange={""} required />
+              <label htmlFor="name" className="labelTexto">Nombre empresa <span className="opcionForm">(Opcional)</span></label>
+              <input type="text" id="name" className="inputForm" value={""} onChange={""} required />
             </div>
 
             <div className="labelInput">
@@ -63,8 +63,8 @@ const CardForm = () => {
 
             
             </div>
-            <ButtonFirst
-              titleButton="Enviar" 
+            <ButtonFirst 
+              titleButton="Enviar mensaje" 
             />
             
           </form>

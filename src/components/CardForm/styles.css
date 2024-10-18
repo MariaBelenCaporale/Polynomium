@@ -131,3 +131,52 @@ line-height: normal;
 .opcionForm {
   color:#5A5A5A;
 }
+
+
+@media (max-width: 576px) {
+  .containerForm {
+    width: 80%;
+    padding: 30px 20px;
+  }
+  .sectionForm {    
+    height: auto;
+  }
+  .formBack {
+    width: 100%;
+    align-items: center;
+  }
+  .filaUnoForm {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .formulario {
+    gap: 0px;
+  }
+  .textForm {
+    font-size: 1em;
+    font-family: 'Poppins-Medium';
+  }
+  .contenedorButtonForm {
+    justify-content: center;
+    gap: 1em;
+  }
+  .contieneTextForm {
+    justify-content: center;
+  }
+  .labelInput {
+    padding: 10px 0px;
+  }
+  .containerDiamanteForm {
+    bottom: 140px;
+  }
+  .containerDiamanteForm img {
+    width: 35%;
+  }
+  .containerDiamanteFormDos {
+    top: -40px;
+    left: 300px;
+  }
+  .containerDiamanteFormDos img {
+    width: 20%;
+  }
+}

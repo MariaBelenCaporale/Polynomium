@@ -20,83 +20,76 @@
 }
 
 
-@media (min-width: 1200px) and (max-width: 1440px) {  
-  .containerLuzUno {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    overflow: hidden;
-    position: absolute;
-  }
-  
-  .luzUno,
-  .luzUnoA {
-    border-radius: 100px;
-    filter: blur(100px);
-    position: absolute;
-    width: 350px;
-    height: 350px;
-  }
-  
-  .luzUno {
-    background: rgba(0, 117, 255, 0.40); 
-    left: -190px;
-  }
-  
-  .luzUnoA {
-    background: rgba(0, 117, 255, 0.40); 
-    right: -190px;
-  }
 
-  .contenedorCarouselTotal {
-    display: flex;
-    width: 90%;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .containerBtnCarousel {
-    z-index: 20;
-  }
-  .btnCarousel {
-    background-color: transparent;
-    border: 1px solid white;
-    width: 90px;
-    height: 90px;
-    cursor: pointer;
-    border-radius: 50%;
-    color: white;
-  }
-  .sectionCarousel {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-  .fraseFondo {
-    position: absolute;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    z-index: 1;
-  }
-  .fraseFondoTexto {
-    color: rgba(255, 255, 255, 0.05);
-    text-align: center;
-    text-shadow: 0px 4px 184px #000, 0px 4px 134px #000;
-    font-family: 'Poppins-Medium';
-    font-size: 12em;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 100.044%;
-    width: 100%;
-    text-align: center;
-  }
+.containerLuzUno {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+.luzUno,
+.luzUnoA {
+  border-radius: 100px;
+  filter: blur(100px);
+  position: absolute;
+  width: 350px;
+  height: 350px;
+}
+.luzUno {
+  background: rgba(0, 117, 255, 0.40); 
+}
+.luzUnoA {
+  background: rgba(0, 117, 255, 0.40); 
+}
+.contenedorCarouselTotal {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+}
+.containerBtnCarousel {
+  z-index: 20;
+}
+.sectionCarousel {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.btnCarousel {
+  background-color: transparent;
+  border: 1px solid white;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+  border-radius: 50%;
+  color: white;
+}
+.fraseFondo {
+  position: absolute;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  z-index: 1;
+}
+.fraseFondoTexto {
+  color: rgba(255, 255, 255, 0.05);
+  text-align: center;
+  text-shadow: 0px 4px 184px #000, 0px 4px 134px #000;
+  font-family: 'Poppins-Medium';
+  font-size: 12em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100.044%;
+  width: 100%;
+  text-align: center;
+}
 .swiper-container {
 	width: 50%;
 	height: 60%;
@@ -127,36 +120,94 @@ transform: scale(0.8);
     transform: scale(0.7) rotate(-20deg); 
     opacity: 0.5; 
 }
-
 .swiper-slide-active {
-    transform: scale(1) rotate(0deg);
-    opacity: 1; 
+  transform: scale(1) rotate(0deg);
+  opacity: 1; 
 }
 
 .swiper-slide:not(.swiper-slide-prev):not(.swiper-slide-active):not(.swiper-slide-next) {
-	opacity: 0;
+opacity: 0;
 }
 
 .swiper-slide-prev,
 .swiper-slide-next {
-    transform: scale(0.9) rotate(-10deg); 
-    opacity: 0.8;
+  transform: scale(0.9) rotate(-10deg); 
+  opacity: 0.8;
 }
 .swiper-3d {
-    perspective: 490px;
-    perspective-origin: center;
-    -webkit-perspective-origin-y: 700px;
+  perspective: 490px;
+  perspective-origin: center;
+  -webkit-perspective-origin-y: 700px;
 
-    perspective: 1200px;
-    z-index: 1;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+  perspective: 1200px;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #0075FF !important;
+background-color: #0075FF !important;
 }
+
+
+@media (max-width: 576px) {
+  .luzUno,
+  .luzUnoA {
+    filter: blur(100px);
+    width: 350px;
+    height: 350px;
+  }
+  .luzUno {
+    background: rgba(0, 117, 255, 0.40); 
+    left: -190px;
+  }
+  .luzUnoA {
+    background: rgba(0, 117, 255, 0.40); 
+    right: -190px;
+  }
+  .contenedorCarouselTotal {
+    width: 90%;
+    
+  }
+  .btnCarousel {
+    display: none;
+  }
+  .fraseFondoTexto {
+    font-size: 4em;
+    font-family: 'Poppins-Medium';
+  }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {  
+  .luzUno,
+  .luzUnoA {
+    filter: blur(100px);
+    width: 350px;
+    height: 350px;
+  }
+  .luzUno {
+    background: rgba(0, 117, 255, 0.40); 
+    left: -190px;
+  }
+  .luzUnoA {
+    background: rgba(0, 117, 255, 0.40); 
+    right: -190px;
+  }
+  .contenedorCarouselTotal {
+    width: 90%;
+  }
+  .fraseFondoTexto {
+    font-size: 12em;
+    font-family: 'Poppins-Medium';
+  }
+
+
+
+
+
+
 }

@@ -21,7 +21,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: auto;
 }
 .tituloMiniAbout {
   color: #fff;
@@ -79,8 +79,28 @@
   font-style: normal;
   line-height: 34px;
 }
+.containerTextosAbout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  gap: 1em;
+}
+.contenedorColumnasAbout {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+  gap: 3em;
+}
 
 @media (max-width: 576px) {
+  .sectionAbout {
+    margin: 30px 0px;
+    height: auto;
+  }
   .tituloMiniAbout {
     font-size: .8em;
   }
@@ -100,30 +120,17 @@
     font-size: 1.3em;
   }
   .textosMisionVision {
-    font-size: .8em;
+    font-size: .9em;
     line-height: 20px;
+  }
+  .containerTextosAbout {
+    width: 90%;
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1440px) {
   .tituloMiniAbout {
     font-size: 1em;
-  }
-  .containerTextosAbout {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 60%;
-    gap: 1em;
-  }
-  .contenedorColumnasAbout {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    justify-content: center;
-    gap: 3em;
   }
   .tituloAbout {
     font-size: 4em;
@@ -136,5 +143,8 @@
   }
   .textosMisionVision {
     font-size: 1em;
+  }
+  .containerTextosAbout {
+    width: 60%;
   }
 }

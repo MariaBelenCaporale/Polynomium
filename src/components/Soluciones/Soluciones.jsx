@@ -67,15 +67,20 @@ const Soluciones = () => {
           {activeText === "productos" && (
             <div className="extraText">
               <p className="textoClickSoluciones">
-                Nuestros Productos Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
+              <span className="titulo">
+              Empodera tu negocio </span> con herramientas que mejoran la eficiencia y te permiten enfocarte en lo que realmente importa: Crecer.
               </p>
+<p className="textoClickSoluciones">
+<span className="titulo">
+Nuestros desarrollos </span>
+Cada uno de nuestros productos están pensados y diseñado para ser aplicados en los desarrollos de nuestros clientes en caso de querer hacer crecer sus proyectos existentes. O de igual manera en el caso de querer emprender desde cero brindamos la tecnología como una white label capaz de ser usada de manera independiente con la estética y cualidades agregadas a pedido, según tu necesidad.
+</p>
+<p className="textoClickSoluciones">
+<span className="titulo">
+Plataformas responsivas web y moviles </span>
+Nuestras soluciones son rápidas, responsivas y completamente optimizadas para ofrecer una experiencia de usuario fluida en cualquier dispositivo. 
+</p>
+              
             </div>
           )}
         </div>
