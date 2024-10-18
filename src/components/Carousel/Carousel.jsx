@@ -61,7 +61,7 @@ const Carousel = () => {
   };
 
   return (
-    <section className="sectionCarousel">
+    <section className="sectionCarousel" id="productos">
       <div className="contenedorCarouselTotal">
         <div className="fraseFondo">
           <h2 className="fraseFondoTexto">Nuestros productos</h2>

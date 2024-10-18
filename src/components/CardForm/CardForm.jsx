@@ -5,7 +5,7 @@ import "./styles.css";
 
 const CardForm = () => {
   return (
-    <section className="sectionForm">
+    <section className="sectionForm" id="contacto">
       <div className="containerForm">
         <div className="formBack">
           <div className="internoForm">

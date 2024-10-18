@@ -1,7 +1,7 @@
 import LanguageSelect from '../Language/Language';
 import Logo from '../../images/logo.png';
 import './styles.css';
-import { Link } from 'react-router-dom';
+
 
 
 const NavBar = () => {
@@ -15,13 +15,13 @@ const NavBar = () => {
       </div>
       <ul className='navLinks'>
         <li>
-          <Link to="/" className='link'>Nosotros</Link>
+          <a href="#nosotros" className='link'>Nosotros</a>
         </li>
         <li>
-          <Link to="/about" className='link'>Productos</Link>
+          <a href="#productos" className='link'>Productos</a>
         </li>
         <li>
-          <Link to="/contact" className='link'>Contacto</Link>
+          <a href="#contacto" className='link'>Contacto</a>
         </li>
       </ul>
       <LanguageSelect />

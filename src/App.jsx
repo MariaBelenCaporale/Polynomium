@@ -3,9 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomeScreen from './screens/homeScreen/HomeScreen';
 
 
-
-
-
 function App() {
   return (
     <Router>
