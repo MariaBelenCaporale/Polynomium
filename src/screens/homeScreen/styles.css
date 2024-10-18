@@ -23,6 +23,9 @@
     .contieneRocaHome img {
         width: 100%;
     }
+    .contenedorHome {
+        gap: 4em;
+    }
 }
 @media (min-width: 1200px) and (max-width: 1440px) {
 

@@ -1,5 +1,6 @@
 import './styles.css';
 import RocaUno from '../../images/roca.png'
+import Energia from '../Energia/Energia';
 
 const Hero = () => {
     return (
@@ -16,6 +17,8 @@ const Hero = () => {
                 <h2 className='tituloHero'> lo estamos creando hoy.</h2>
                 <p className='subtituloHero'>ADN tecnológico en constante evolución</p>
             </div>
+
+            <Energia />
         </section>
     )
 };

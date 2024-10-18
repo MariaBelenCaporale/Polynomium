@@ -164,6 +164,7 @@
 }
 .formas {
     width: 100%;
+    opacity: .5;
 }
 .titleFooter {
     color: #FFF;
@@ -177,7 +178,45 @@
     width: 100%;
 }
 
-
+@media (max-width: 576px) {
+    .footerOrder {
+        flex-direction: column;
+        padding: 30px 20px;
+        width: 85%;
+        height: auto;
+        gap: 2em;
+    }
+    .logoFooter {
+        width: 80%;
+    }
+    .footerProduct {
+        margin: 0px;
+    }
+    .listResponsive {
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 1em;
+    }
+    .textNavOne, .textNavThree {
+        font-size: .75em;
+    }
+    .lineResponsive {
+        display: flex;
+        border: 1px solid white;
+        width: 100%;
+    }
+    .columnOneFooterRed {
+        justify-content: center;
+    }
+    .textNavComunidad {
+        font-size: .75em;
+    }
+    .formas {
+        width: 1000px;
+    }
+}
 
 @media (min-width: 1201px) and (max-width: 1440px )  {
     .listResponsive {

@@ -12,7 +12,7 @@ const Slogan = () => {
                 <img src={Adn} alt='logo 3d' />
             </div>
             <div className='contenedorTextoSlogan'>
-                <h2 className='sloganTexto'>Megapix, innovando el presente & futuro</h2>
+                <h2 className='sloganTexto'> <span className='polyAzul'>Polynomium,</span> innovando el presente & futuro</h2>
             </div>
         </section>
     )

@@ -99,7 +99,11 @@
     right: -600px;
   }
   .sectionHero {
-    height: 50vh;
+    flex-direction: column;
+    gap: 3em;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
   }
   .rocaUnoHero {
     width: 50%;

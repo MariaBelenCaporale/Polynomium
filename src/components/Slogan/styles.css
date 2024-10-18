@@ -68,6 +68,30 @@
     }
   }
 
+  @media (max-width: 576px) {
+    .sectionSlogan {
+      height: 50vh;
+    }
+    .contenedorImgAdn img {
+      width: 20%;
+    }
+    .contenedorTextoSlogan {
+      width: 90%;
+    }
+    .sloganTexto {
+      font-size: 1.7em;
+    }
+    .contenedorRocaSlogan {
+      right: -700px;
+      bottom: 120px;
+    }
+    .contenedorRocaSlogan img {
+      width: 50%;
+    }
+    .polyAzul {
+      color: #0075FF;
+    }
+  }
 
 @media (min-width: 1200px) and (max-width: 1440px) {
     .sloganTexto {
