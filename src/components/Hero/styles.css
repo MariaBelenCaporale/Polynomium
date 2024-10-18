@@ -91,9 +91,15 @@
   .containerTextosHero {
     gap: .5em;
   }
+  .contenedorRocaUno {    
+    top: -150px;
+  }
   .contenedorRocaDos {
     top: 400px;
     right: -600px;
+  }
+  .sectionHero {
+    height: 50vh;
   }
   .rocaUnoHero {
     width: 50%;

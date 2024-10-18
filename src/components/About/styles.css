@@ -15,21 +15,99 @@
   src: url("../../fonts/Poppins/Poppins-Light.ttf");
 }
 
-@media (min-width: 1200px) and (max-width: 1440px) {
-  .sectionAbout {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+
+.sectionAbout {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.tituloMiniAbout {
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins-Regular";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+.tituloAbout {
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins-Regular";
+  font-size: 4em;
+  font-style: normal;
+  line-height: 100%;
+}
+.textoAbout {
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins-Light";
+  font-size: 1.3em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.contenedorAboutTotal {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  gap: 6em;
+}
+.contenedorMyV {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.misionVision {
+  color: #fff;
+  font-family: "Poppins-Bold";
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px;
+}
+.textosMisionVision {
+  color: #fff;
+  font-family: "Poppins-Regular";
+  font-size: 1em;
+  font-style: normal;
+  line-height: 34px;
+}
+
+@media (max-width: 576px) {
+  .tituloMiniAbout {
+    font-size: .8em;
+  }
+  .tituloAbout {
+    font-size: 1.8em;
+    line-height: 120%;
+    font-family: 'Poppins-Light';
+  }
+  .textoAbout {
+    font-size: 1em;
   }
   .contenedorAboutTotal {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    width: 80%;
-    gap: 6em;
+    width: 90%;
+    gap: 4em;
+  }
+  .misionVision {
+    font-size: 1.3em;
+  }
+  .textosMisionVision {
+    font-size: .8em;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .tituloMiniAbout {
+    font-size: 1em;
   }
   .containerTextosAbout {
     display: flex;
@@ -47,54 +125,16 @@
     justify-content: center;
     gap: 3em;
   }
-  .contenedorMyV {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .tituloMiniAbout {
-    color: #fff;
-    text-align: center;
-    font-family: "Poppins-Regular";
-    font-size: 1em;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-    letter-spacing: 3.6px;
-    text-transform: uppercase;
-    opacity: 0.6;
-  }
   .tituloAbout {
-    color: #fff;
-    text-align: center;
-    font-family: "Poppins-Regular";
     font-size: 4em;
-    font-style: normal;
-    line-height: 100%;
-    letter-spacing: -2.88px;
   }
   .textoAbout {
-    color: #fff;
-    text-align: center;
-    font-family: "Poppins-Light";
     font-size: 1.3em;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
   }
   .misionVision {
-    color: #fff;
-    font-family: "Poppins-Bold";
     font-size: 1.5em;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 34px;
   }
   .textosMisionVision {
-    color: #fff;
-    font-family: "Poppins-Regular";
     font-size: 1em;
-    font-style: normal;
-    line-height: 34px;
   }
 }

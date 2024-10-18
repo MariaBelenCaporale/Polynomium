@@ -42,7 +42,7 @@
 
 @media (max-width: 576px) {
     .imgBola {
-        width: 100%;
+        width: 600px;
     }
     .luzAzul, .luzAzulDos {
         width: 100px;
@@ -51,6 +51,12 @@
     }
     .rayo, .rayoDos {
         width: 100%;
+    }
+    .sectionEnergia {
+        height: 50vh;
+    }
+    .contieneBola {
+        height: auto;
     }
 }
 @media (min-width: 1200px) and (max-width: 1440px) {
