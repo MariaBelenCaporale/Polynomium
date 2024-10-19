@@ -180,3 +180,19 @@
     width: 20%;
   }
 }
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .formBack {
+    width: 100%;
+  }
+  .containerForm {
+    width: 70%;
+  }
+  .contenedorButtonForm {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 2em;
+    width: auto;
+  }
+}

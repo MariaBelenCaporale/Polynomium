@@ -70,6 +70,11 @@
   border-radius: 50%;
   color: white;
 }
+.btnCarousel:hover {
+  border: 1px solid #111;
+  background-color: #111;
+  box-shadow: 0px 0px 6px 1px rgb(247 248 249 / 38%);
+}
 .fraseFondo {
   position: absolute;
   width: 100%;

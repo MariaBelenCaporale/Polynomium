@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import KeyboardArrowLeftRoundedIcon from '@mui/icons-material/KeyboardArrowLeftRounded';
 import KeyboardArrowRightRoundedIcon from '@mui/icons-material/KeyboardArrowRightRounded';
 import "./styles.css";
@@ -16,6 +16,18 @@ const About = () => {
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -39,20 +51,31 @@ const About = () => {
         </div>
         <div className="contenedorColumnasAbout">
           <div className="contenedorMyV">
-            <h3 className="misionVision">{slides[currentSlide].title}</h3>
-            <p className="textosMisionVision">
-            {slides[currentSlide].text}
-            </p>
+            {!isMobile ? (
+              slides.map((slide, index) => (
+                <div key={index} className="slide">
+                  <h3 className="misionVision">{slide.title}</h3>
+                  <p className="textosMisionVision">{slide.text}</p>
+                </div>
+              ))
+            ) : (
+              <>
+                <h3 className="misionVision">{slides[currentSlide].title}</h3>
+                <p className="textosMisionVision">{slides[currentSlide].text}</p>
+              </>
+            )}
           </div>
-
         </div>
-        <div className="sliderControls">
-          <button className="sliderButton" onClick={prevSlide}> <KeyboardArrowLeftRoundedIcon /> </button>
-          <button className="sliderButton" onClick={nextSlide}> <KeyboardArrowRightRoundedIcon /> </button>
-        </div>
+        {isMobile && (
+          <div className="sliderControls">
+            <button className="sliderButton" onClick={prevSlide}> <KeyboardArrowLeftRoundedIcon /> </button>
+            <button className="sliderButton" onClick={nextSlide}> <KeyboardArrowRightRoundedIcon /> </button>
+          </div>
+        )}
       </div>
     </section>
   );
 };
 
 export default About;
+  

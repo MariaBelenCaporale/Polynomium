@@ -80,11 +80,8 @@
 @media (max-width: 576px){
     .dropdownMenu {
         width: auto;
-        top: 90%;
+        top: 130%;
     }
-}
-@media (min-width: 577px) and (max-width: 768px) {
-    
 }
 @media (min-width: 993px) and (max-width: 1200px) {
     .dropdownMenu {

@@ -103,8 +103,8 @@
     flex-direction: column;
     gap: 3em;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+    justify-content: space-evenly;
+    height: 80vh;
   }
   .rocaUnoHero {
     width: 50%;
