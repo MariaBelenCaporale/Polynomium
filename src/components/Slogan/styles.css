@@ -111,3 +111,22 @@
       width: 80%;
     } 
 }
+
+@media (min-width: 1441px) {
+    .sloganTexto {
+        font-size: 5em;
+    }
+    .contenedorTextoSlogan {
+      width: 60%;
+    }
+    .contenedorImgAdn img {
+        width: 10%;
+    }
+    .contenedorRocaSlogan {
+      right: -500px;
+      bottom: 100px;
+    }
+    .contenedorRocaSlogan img {
+      width: 80%;
+    } 
+}

@@ -218,7 +218,47 @@
     }
 }
 
-@media (min-width: 1201px) and (max-width: 1440px )  {
+@media (min-width: 1200px) and (max-width: 1440px )  {
+    .listResponsive {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-evenly;
+        width: 100%;
+        gap: 2em;
+    }
+    .logoFooter {
+        width: 70%;
+    }
+    .footerOrder {
+        padding: 40px 60px;
+        width: 80%;
+        gap: 3em;
+        position: absolute;
+    }
+    .lineResponsive {
+        display: none;
+    }
+    .columnOneFooterRed {
+        justify-content: center;
+    }
+    .textNavThree {
+        font-weight: 500;
+    }
+    .containerTotal {
+        align-items: flex-start;
+    }
+    .textNavComunidad {
+        text-align: center;
+    }
+    .listResponsive {
+        gap: 7em;
+    }
+    .containerTextImportant {
+        top: 350px;
+    }
+}
+@media (min-width: 1441px)  {
     .listResponsive {
         display: flex;
         flex-direction: row;

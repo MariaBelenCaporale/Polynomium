@@ -238,4 +238,32 @@
 }
 
 
-/* translate3d(calc(-270% + 0px), calc(60% + 0px), calc(-300px)) rotateX(0deg) rotateY(0deg) rotateZ(-180deg) scale(1)  */
+@media (min-width: 1441px) {
+  .contenedorCard {
+    gap: 6em;
+  }
+  .miniTituloCarousel {
+    font-size: 1em;
+  }
+  .tituloCarousel {
+    font-size: 4em;
+  }
+  .subtituloCarousel {
+    font-size: 1.5em;
+  }
+  .subtituloCarouselDos {
+    font-size: 1.3em;
+  }
+  .contenedorTextosCarousel {
+    gap: 2em;
+  }
+  .contenedorCarouselUno {
+    gap: 2em;
+  }
+  .imgAssiria, .imgFluence {
+    width: 60%;
+  }
+  .imgMegapix {
+    width: 40%;
+  } 
+}

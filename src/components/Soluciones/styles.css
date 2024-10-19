@@ -36,12 +36,11 @@
   font-feature-settings: 'liga' off, 'clig' off;
   font-family: 'Poppins-Light';
   font-size: 1.4em;
-  font-style: normal;
 }
 
 .contenedorSolucionesTotal {
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Alineación vertical ajustada */
   flex-direction: row;
   justify-content: center;
   width: 80%;
@@ -67,6 +66,7 @@
   font-size: 1em;
   font-style: normal;
   line-height: 34px; 
+  margin-top: 10px; /* Espaciado entre botón y texto */
 }
 .contenedorBotonesSolu {
   display: flex;
@@ -76,17 +76,15 @@
 .btnSolucion {
   display: flex;
   background: transparent;
-  border: 0px;
-  padding: 20px 0px;
+  border: 0;
+  padding: 20px 0;
   cursor: pointer;
   flex-direction: column;
   gap: 1em;
-
   color: #FFF;
   font-feature-settings: 'liga' off, 'clig' off;
   font-family: 'Poppins-Light';
   font-size: 1.2em;
-  font-style: normal;
 }
 .lineaSoluciones {
   display: block;
@@ -94,7 +92,6 @@
   background-color: transparent; 
   transition: background-color 0.3s ease; 
 }
-
 .lineaSoluciones.activo {
   background-color: blue; 
   height: 5px;
@@ -107,11 +104,8 @@
 }
 
 @media (max-width: 576px) {
-
-
   .sectionSoluciones {
     height: auto;
-
   }
   .lineaSoluciones {
     height: 2px;
@@ -170,5 +164,20 @@
   .btnSolucion {
     font-size: 1.2em;
   }
-
 }
+
+@media (min-width: 1441px) {
+  .textoClickSoluciones {
+    font-size: 1.3em;
+  }
+  .btnSolucion {
+    font-size: 2em;
+  }
+  .textoSoluciones {
+    font-size: 1.5em;
+  }
+  .titulo {
+    font-family: 'Poppins-Bold';
+  }
+}
+

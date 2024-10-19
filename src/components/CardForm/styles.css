@@ -196,3 +196,26 @@
     width: auto;
   }
 }
+
+@media (min-width: 1441px) {
+  .formBack {
+    width: 100%;
+  }
+  .containerForm {
+    width: 70%;
+  }
+  .contenedorButtonForm {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 2em;
+    width: auto;
+  }
+  .containerDiamanteForm img {
+    width: 10%;
+  }
+  .containerDiamanteForm {
+    bottom: 200px;
+    left: 150px;
+  }
+}

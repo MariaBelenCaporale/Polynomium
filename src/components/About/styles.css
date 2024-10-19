@@ -187,3 +187,12 @@
     gap: 3em;
   }
 }
+
+@media (min-width: 1441px) {
+  .contenedorMyV {
+    gap: 4em;
+  }
+  .textosMisionVision {
+    font-size: 1.3em;
+  }
+}

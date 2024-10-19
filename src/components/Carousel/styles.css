@@ -209,10 +209,31 @@ background-color: #0075FF !important;
     font-size: 12em;
     font-family: 'Poppins-Medium';
   }
-
-
-
-
-
-
+}
+@media (min-width: 1441px) {  
+  .luzUno,
+  .luzUnoA {
+    filter: blur(100px);
+    width: 350px;
+    height: 350px;
+  }
+  .luzUno {
+    background: rgba(0, 117, 255, 0.40); 
+    left: -190px;
+  }
+  .luzUnoA {
+    background: rgba(0, 117, 255, 0.40); 
+    right: -190px;
+  }
+  .contenedorCarouselTotal {
+    width: 90%;
+  }
+  .fraseFondoTexto {
+    font-size: 12em;
+    font-family: 'Poppins-Medium';
+    width: 90%;
+  }
+  .swiper-3d {
+    perspective: 1300px;
+  }
 }

@@ -51,7 +51,7 @@ const Soluciones = () => {
         <div className="solucionesDos">
           {activeText === "soluciones" && (
             <div className="extraText">
-              <p className="textoClickSoluciones">
+              
                 <p className="textoClickSoluciones">
                   <span className="titulo">
                     Haciendo Realidad tus Sueños Tecnológicos
@@ -70,7 +70,7 @@ const Soluciones = () => {
                   personalizado de plataformas integrales que se adaptan a tu
                   negocio.
                 </p>
-              </p>
+           
             </div>
           )}
 
@@ -79,8 +79,7 @@ const Soluciones = () => {
               <p className="textoClickSoluciones">
                 Empodera tu negocio con herramientas que mejoran la eficiencia y
                 te permiten enfocarte en lo que realmente importa: Crecer.
-              </p>
-              <p className="textoClickSoluciones">
+              <br></br>
                 <span className="titulo">Nuestros desarrollos </span>
                 Cada uno de nuestros productos están pensados y diseñado para
                 ser aplicados en los desarrollos de nuestros clientes en caso de
@@ -89,8 +88,7 @@ const Soluciones = () => {
                 tecnología como una white label capaz de ser usada de manera
                 independiente con la estética y cualidades agregadas a pedido,
                 según tu necesidad.
-              </p>
-              <p className="textoClickSoluciones">
+              <br></br>
                 <span className="titulo">
                   Plataformas responsivas web y moviles{" "}
                 </span>
