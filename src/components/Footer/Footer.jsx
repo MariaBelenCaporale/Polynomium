@@ -7,6 +7,7 @@ import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 import "./styles.css";
 
+
 const Footer = () => {
   const { t } = useTranslation();
 
@@ -32,8 +33,7 @@ const Footer = () => {
                 </a>
 
                 <a
-                  href="https://www.polynomium.com/"
-                  target="_blank"
+                  href="#"
                   className="navlink"
                   onClick={() => { }}
                 >
@@ -53,7 +53,7 @@ const Footer = () => {
 
               <div className="columnOneFooter">
                 <NavLink
-                  to="/terminos"
+                  to="#"
                   className={({ isActive }) =>
                     isActive ? "navlink active" : "navlink inactive"
                   }
@@ -63,7 +63,7 @@ const Footer = () => {
                 </NavLink>
 
                 <NavLink
-                  to="/terminos"
+                  to="#"
                   className={({ isActive }) =>
                     isActive ? "navlink active" : "navlink inactive"
                   }

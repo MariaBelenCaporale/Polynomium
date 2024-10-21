@@ -16,6 +16,7 @@ const LanguageSelect = () => {
         'Inglés': EstadosUnidos, 
     };
 
+    
     const handleLanguageChange = (language) => {
         let lng;
         switch (language) {

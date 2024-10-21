@@ -15,8 +15,11 @@ import "swiper/swiper-bundle.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, EffectCoverflow } from "swiper/modules";
 
+import { useTranslation } from 'react-i18next';
 
 const Carousel = () => {
+  const { t } = useTranslation();
+
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [videoUrl, setVideoUrl] = useState('');
   const swiperRef = useRef(null);
@@ -64,7 +67,7 @@ const Carousel = () => {
     <section className="sectionCarousel" id="productos">
       <div className="contenedorCarouselTotal">
         <div className="fraseFondo">
-          <h2 className="fraseFondoTexto">Nuestros productos</h2>
+          <h2 className="fraseFondoTexto">{t("Nuestros productos")}</h2>
         </div>
 
         <div className="containerLuzUno" >
@@ -99,14 +102,14 @@ const Carousel = () => {
         >
           <SwiperSlide>
             <CardCarousel 
-              titleButton='Ver más'
+              titleButton={t('Ver más')}
               onButtonClick={() => window.open('https://mgapix.com/', '_blank')}
               
-              miniTitulo="Proyectos"
-              titulo="Megapix"
-              textoUno="Revolucionando los Pagos con PIX"
+              miniTitulo={t("Proyectos")}
+              titulo={t("Megapix")}
+              textoUno={t("Revolucionando los Pagos con PIX")}
               texto={
-                "Forjamos un ambiente donde los comerciantes prosperan y los turistas disfrutan de pagos sin complicaciones, derribando barreras y construyendo conexiones sin fronteras."
+                t("Forjamos un ambiente donde los comerciantes prosperan y los turistas disfrutan de pagos sin complicaciones, derribando barreras y construyendo conexiones sin fronteras.")
               }
               imageCarouselMegapix={Moneda}
               imageCarouselMega={Diamante}
@@ -119,11 +122,11 @@ const Carousel = () => {
               titleButton='Ver más'
               onButtonClick={() => openPopup('https://player.vimeo.com/video/1019520949?share=copy')}
               
-              miniTitulo="Proyectos"
-              titulo="Assiria"
-              textoUno="Plataformas Igaming"
+              miniTitulo={t("Proyectos")}
+              titulo={t("Assiria")}
+              textoUno={t("Plataformas Igaming")}
               texto={
-                "Creamos universos virtuales donde el igaming no es solo entretenimiento, sino una experiencia inmersiva y transformadora."
+                t("Creamos universos virtuales donde el igaming no es solo entretenimiento, sino una experiencia inmersiva y transformadora.")
               }
               imageAssiriaUno={FichaDos}
               imageCarouselAssiria={Ruleta}
@@ -137,10 +140,10 @@ const Carousel = () => {
               titleButton='Ver más'
               onButtonClick={() => openPopup('https://player.vimeo.com/video/1019525364?share=copy')}
 
-              miniTitulo='Proyectos'
-              titulo='Fluence'
-              textoUno={'Sigue al conejo'}
-              texto={'Ser parte de Fluverse implica más que unirse a una plataforma: es adentrarse en un universo de educación financiera.'}
+              miniTitulo={t('Proyectos')}
+              titulo={t('Fluence')}
+              textoUno={t('Sigue al conejo')}
+              texto={t('Ser parte de Fluverse implica más que unirse a una plataforma: es adentrarse en un universo de educación financiera.')}
               imageCarouselFluence={Fluence}
               imageFluenceDos={null}
               imageCarouselDos={null}

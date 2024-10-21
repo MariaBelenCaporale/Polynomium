@@ -2,16 +2,19 @@ import { useState, useEffect } from "react";
 import KeyboardArrowLeftRoundedIcon from '@mui/icons-material/KeyboardArrowLeftRounded';
 import KeyboardArrowRightRoundedIcon from '@mui/icons-material/KeyboardArrowRightRounded';
 import "./styles.css";
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
+  const { t } = useTranslation();
+
   const slides = [
     {
-      title: "Nuestra visión",
-      text: "Buscamos ser líderes en la creación de futuros digitales, impulsando a empresas y emprendedores hacia la innovación tecnológica. Nos comprometemos a que la tecnología sea accesible para todos, especialmente para las pequeñas empresas, brindando soluciones avanzadas que les permitan crecer y prosperar en un mercado en constante evolución."
+      title: t("Nuestra visión"),
+      text: t("Buscamos ser líderes en la creación de futuros digitales, impulsando a empresas y emprendedores hacia la innovación tecnológica. Nos comprometemos a que la tecnología sea accesible para todos, especialmente para las pequeñas empresas, brindando soluciones avanzadas que les permitan crecer y prosperar en un mercado en constante evolución.")
     },
     {
-      title: "Nuestra misión",
-      text: "Proporcionamos soluciones tecnológicas innovadoras y accesibles que empoderan a empresas y emprendedores, facilitando su crecimiento y adaptación al mercado digital. Creamos plataformas que permiten a las empresas optimizar sus operaciones, expandir su alcance y transformar sus negocios."
+      title: t("Nuestra misión"),
+      text: t("Proporcionamos soluciones tecnológicas innovadoras y accesibles que empoderan a empresas y emprendedores, facilitando su crecimiento y adaptación al mercado digital. Creamos plataformas que permiten a las empresas optimizar sus operaciones, expandir su alcance y transformar sus negocios.")
     }
   ];
 
@@ -41,12 +44,10 @@ const About = () => {
     <section className="sectionAbout" id="nosotros">
       <div className="contenedorAboutTotal">
         <div className="containerTextosAbout">
-          <h3 className="tituloMiniAbout">¿QUIENES SOMOS?</h3>
-          <h2 className="tituloAbout">Arquitectos de la tecnología futura</h2>
+          <h3 className="tituloMiniAbout">{t("¿QUIENES SOMOS?")}</h3>
+          <h2 className="tituloAbout">{t("Arquitectos de la tecnología futura")}</h2>
           <p className="textoAbout">
-            Polynomium es el lienzo en blanco para tus ideas, convirtiéndolas en
-            productos digitales asombrosos, desafiando los límites al crear
-            productos tecnológicos que se adaptan a tu visión.
+            {t("Polynomium es el lienzo en blanco para tus ideas, convirtiéndolas en productos digitales asombrosos, desafiando los límites al crear productos tecnológicos que se adaptan a tu visión.")}
           </p>
         </div>
         <div className="contenedorColumnasAbout">

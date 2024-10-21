@@ -2,30 +2,33 @@ import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import ButtonFirst from "../ButtonFirst/ButtonFirst";
 import Diamante from '../../images/diamante.png';
 import "./styles.css";
+import { useTranslation } from 'react-i18next';
 
 const CardForm = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="sectionForm" id="contacto">
       <div className="containerForm">
         <div className="formBack">
           <div className="internoForm">
             <div className="contieneTextForm">
-              <p className="textForm">Estoy interesado en:</p>
+              <p className="textForm">{t("Estoy interesado en:")}</p>
             </div>
             <div className="contenedorButtonForm">
-              <ButtonComponent titulo="Crear un producto" />
-              <ButtonComponent titulo="Productos Polynomium" />
+              <ButtonComponent titulo={t("Crear un producto")} />
+              <ButtonComponent titulo={t("Productos Polynomium")} />
             </div>
           </div>
 
           <form className='formulario' onSubmit={""}>
             <div className="filaUnoForm">
             <div className="labelInput">
-              <label htmlFor="name" className="labelTexto">Nombre completo</label>
+              <label htmlFor="name" className="labelTexto">{t("Nombre completo")}</label>
               <input type="text" id="name" className="inputForm" value={""} onChange={""} required />
             </div>
             <div className="labelInput">
-              <label htmlFor="email" className="labelTexto">E-mail</label>
+              <label htmlFor="email" className="labelTexto">{t("E-mail")}</label>
               <input
               className="inputForm"
                 type="email"
@@ -39,12 +42,12 @@ const CardForm = () => {
 
             <div className="filaUnoForm">
             <div className="labelInput">
-              <label htmlFor="name" className="labelTexto">Nombre empresa <span className="opcionForm">(Opcional)</span></label>
+              <label htmlFor="name" className="labelTexto">{t("Nombre empresa ")}<span className="opcionForm">{t("(Opcional)")}</span></label>
               <input type="text" id="name" className="inputForm" value={""} onChange={""} required />
             </div>
 
             <div className="labelInput">
-              <label htmlFor="email" className="labelTexto">País</label>
+              <label htmlFor="email" className="labelTexto">{t("País")}</label>
               <input
               className="inputForm"
                 type="text"
@@ -57,14 +60,14 @@ const CardForm = () => {
             </div>
             <div className="filaUnoForm">
             <div className="labelInput">
-              <label htmlFor="name" className="labelTexto">Desarrollar necesidad <span className="opcionForm">(Opcional)</span></label>
+              <label htmlFor="name" className="labelTexto">{t("Desarrollar necesidad ")}<span className="opcionForm">{t("(Opcional)")}</span></label>
               <input type="text" id="necesidad" className="inputForm" value={""} onChange={""} required />
             </div>
 
             
             </div>
             <ButtonFirst 
-              titleButton="Enviar mensaje" 
+              titleButton={t("Enviar mensaje" )}
             />
             
           </form>
