@@ -70,11 +70,11 @@ const Soluciones = () => {
               <p className="textoClickSoluciones">
                 {t("Empodera tu negocio con herramientas que mejoran la eficiencia y te permiten enfocarte en lo que realmente importa: Crecer.")}
               <br></br>
-                <span className="titulo">{t("Nuestros desarrollos")} </span>
+                <span className="titulo">{t("Nuestros desarrollos ")} </span>
                 {t("Cada uno de nuestros productos están pensados y diseñado para ser aplicados en los desarrollos de nuestros clientes en caso de querer hacer crecer sus proyectos existentes. O de igual manera en el caso de querer emprender desde cero brindamos la tecnología como una white label capaz de ser usada de manera independiente con la estética y cualidades agregadas a pedido, según tu necesidad.")}
               <br></br>
                 <span className="titulo">
-                  {t("Plataformas responsivas web y moviles")}
+                  {t("Plataformas responsivas web y moviles ")}
                 </span>
                 {t("Nuestras soluciones son rápidas, responsivas y completamente optimizadas para ofrecer una experiencia de usuario fluida en cualquier dispositivo.")}
               </p>

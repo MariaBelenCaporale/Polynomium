@@ -29,7 +29,17 @@ const resources = {
             'Haciendo Realidad tus Sueños Tecnológicos':'Haciendo Realidad tus Sueños Tecnológicos',
             '¿Tenés una visión ambiciosa? En Polynomium, colaboramos con vos para transformar tus ideas en soluciones digitales innovadoras, acompañándote en cada paso del proceso, desde la concepción hasta su implementación final. ¡Creamos tecnología que impulsa tu éxito! Software Personalizado Convertimos tus ideas en soluciones tecnológicas y las diseñamos basándonos en las necesidades únicas de tu negocio. Desde la optimización de procesos internos, gestión de contenidos eficientes, hasta la automatización de tareas críticas. En Polynomium te ayudamos a operar con mayor agilidad y eficacia a través del desarrollo personalizado de plataformas integrales que se adaptan a tu negocio.':'¿Tenés una visión ambiciosa? En Polynomium, colaboramos con vos para transformar tus ideas en soluciones digitales innovadoras, acompañándote en cada paso del proceso, desde la concepción hasta su implementación final. ¡Creamos tecnología que impulsa tu éxito! Software Personalizado Convertimos tus ideas en soluciones tecnológicas y las diseñamos basándonos en las necesidades únicas de tu negocio. Desde la optimización de procesos internos, gestión de contenidos eficientes, hasta la automatización de tareas críticas. En Polynomium te ayudamos a operar con mayor agilidad y eficacia a través del desarrollo personalizado de plataformas integrales que se adaptan a tu negocio.',
             'Empodera tu negocio con herramientas que mejoran la eficiencia y te permiten enfocarte en lo que realmente importa: Crecer.':'Empodera tu negocio con herramientas que mejoran la eficiencia y te permiten enfocarte en lo que realmente importa: Crecer.',
-            'Nuestros desarrollos Cada uno de nuestros productos están pensados y diseñado para ser aplicados en los desarrollos de nuestros clientes en caso de querer hacer crecer sus proyectos existentes. O de igual manera en el caso de querer emprender desde cero brindamos la tecnología como una white label capaz de ser usada de manera independiente con la estética y cualidades agregadas a pedido, según tu necesidad. Plataformas responsivas web y moviles Nuestras soluciones son rápidas, responsivas y completamente optimizadas para ofrecer una experiencia de usuario fluida en cualquier dispositivo.':'Nuestros desarrollos Cada uno de nuestros productos están pensados y diseñado para ser aplicados en los desarrollos de nuestros clientes en caso de querer hacer crecer sus proyectos existentes. O de igual manera en el caso de querer emprender desde cero brindamos la tecnología como una white label capaz de ser usada de manera independiente con la estética y cualidades agregadas a pedido, según tu necesidad. Plataformas responsivas web y moviles Nuestras soluciones son rápidas, responsivas y completamente optimizadas para ofrecer una experiencia de usuario fluida en cualquier dispositivo.',
+
+            'Nuestros desarrollos ':'Nuestros desarrollos ',
+
+            
+            'Cada uno de nuestros productos están pensados y diseñado para ser aplicados en los desarrollos de nuestros clientes en caso de querer hacer crecer sus proyectos existentes. O de igual manera en el caso de querer emprender desde cero brindamos la tecnología como una white label capaz de ser usada de manera independiente con la estética y cualidades agregadas a pedido, según tu necesidad.':
+            'Cada uno de nuestros productos están pensados y diseñado para ser aplicados en los desarrollos de nuestros clientes en caso de querer hacer crecer sus proyectos existentes. O de igual manera en el caso de querer emprender desde cero brindamos la tecnología como una white label capaz de ser usada de manera independiente con la estética y cualidades agregadas a pedido, según tu necesidad.',
+            
+            'Plataformas responsivas web y moviles ':'Plataformas responsivas web y moviles ',
+
+            
+            'Nuestras soluciones son rápidas, responsivas y completamente optimizadas para ofrecer una experiencia de usuario fluida en cualquier dispositivo.':'Nuestras soluciones son rápidas, responsivas y completamente optimizadas para ofrecer una experiencia de usuario fluida en cualquier dispositivo.',
 
             'Proyectos':'Proyectos',
             'Megapix':'Megapix',
@@ -50,9 +60,10 @@ const resources = {
             'Productos Polynomium':'Productos Polynomium',
             'Nombre completo':'Nombre completo',
             'E-mail':'E-mail',
-            'Nombre empresa (Opcional)':'Nombre empresa (Opcional)',
+            'Nombre empresa ':'Nombre empresa ',
+            '(Opcional)':'(Opcional)',
             'País':'País',
-            'Desarrollar necesidad (Opcional)':'Desarrollar necesidad (Opcional)',
+            'Desarrollar necesidad ':'Desarrollar necesidad ',
             'Enviar mensaje':'Enviar mensaje',
             'Polynomium':'Polynomium',
             ' innovando el presente & futuro':' innovando el presente & futuro',
@@ -101,7 +112,15 @@ const resources = {
             '¿Tenés una visión ambiciosa? En Polynomium, colaboramos con vos para transformar tus ideas en soluciones digitales innovadoras, acompañándote en cada paso del proceso, desde la concepción hasta su implementación final. ¡Creamos tecnología que impulsa tu éxito! Software Personalizado Convertimos tus ideas en soluciones tecnológicas y las diseñamos basándonos en las necesidades únicas de tu negocio. Desde la optimización de procesos internos, gestión de contenidos eficientes, hasta la automatización de tareas críticas. En Polynomium te ayudamos a operar con mayor agilidad y eficacia a través del desarrollo personalizado de plataformas integrales que se adaptan a tu negocio.':'Tem uma visão ambiciosa? Na Polynomium, colaboramos com você para transformar suas ideias em soluções digitais inovadoras, acompanhando-o em cada etapa do processo, desde a concepção até a implementação final. Criamos tecnologia que impulsiona seu sucesso! Software Personalizado Convertemos suas ideias em soluções tecnológicas e as projetamos com base nas necessidades únicas do seu negócio. Desde a otimização de processos internos, gestão eficiente de conteúdos, até a automação de tarefas críticas. Na Polynomium, ajudamos você a operar com maior agilidade e eficácia por meio do desenvolvimento personalizado de plataformas integrais que se adaptam ao seu negócio.',
 
             'Empodera tu negocio con herramientas que mejoran la eficiencia y te permiten enfocarte en lo que realmente importa: Crecer.':'Empodere seu negócio com ferramentas que melhoram a eficiência e permitem que você se concentre no que realmente importa: Crescer.',
-            'Nuestros desarrollos Cada uno de nuestros productos están pensados y diseñado para ser aplicados en los desarrollos de nuestros clientes en caso de querer hacer crecer sus proyectos existentes. O de igual manera en el caso de querer emprender desde cero brindamos la tecnología como una white label capaz de ser usada de manera independiente con la estética y cualidades agregadas a pedido, según tu necesidad. Plataformas responsivas web y moviles Nuestras soluciones son rápidas, responsivas y completamente optimizadas para ofrecer una experiencia de usuario fluida en cualquier dispositivo.':'Nossos desenvolvimentos Cada um de nossos produtos é pensado e projetado para ser aplicado nos desenvolvimentos de nossos clientes, caso queiram fazer crescer seus projetos existentes. Da mesma forma, se você quiser empreender do zero, oferecemos a tecnologia como uma solução white label, capaz de ser utilizada de forma independente com a estética e as qualidades personalizadas conforme sua necessidade. Plataformas responsivas web e móveis Nossas soluções são rápidas, responsivas e completamente otimizadas para oferecer uma experiência de usuário fluida em qualquer dispositivo.',
+
+            'Nuestros desarrollos ':'Nossos desenvolvimentos ',
+
+            'Cada uno de nuestros productos están pensados y diseñado para ser aplicados en los desarrollos de nuestros clientes en caso de querer hacer crecer sus proyectos existentes. O de igual manera en el caso de querer emprender desde cero brindamos la tecnología como una white label capaz de ser usada de manera independiente con la estética y cualidades agregadas a pedido, según tu necesidad.':
+            'Cada um de nossos produtos é pensado e projetado para ser aplicado nos desenvolvimentos de nossos clientes, caso queiram fazer crescer seus projetos existentes. Da mesma forma, se você quiser empreender do zero, oferecemos a tecnologia como uma solução white label, capaz de ser utilizada de forma independente com a estética e as qualidades personalizadas conforme sua necessidade.',
+            
+            'Plataformas responsivas web y moviles ':'Plataformas responsivas web e móveis ',
+
+            'Nuestras soluciones son rápidas, responsivas y completamente optimizadas para ofrecer una experiencia de usuario fluida en cualquier dispositivo.':'Nossas soluções são rápidas, responsivas e completamente otimizadas para oferecer uma experiência de usuário fluida em qualquer dispositivo.',
 
             'Proyectos':'Projetos',
             'Megapix':'Megapix',
@@ -122,9 +141,11 @@ const resources = {
             'Productos Polynomium':'Produtos Polynomium',
             'Nombre completo':'Nome completo',
             'E-mail':'E-mail',
-            'Nombre empresa (Opcional)':'Nome da empresa (Opcional)',
+            
+            'Nombre empresa ':'Nome da empresa ',
             'País':'País',
-            'Desarrollar necesidad (Opcional)':'Necessidade de desenvolvimento (Opcional)',
+            'Desarrollar necesidad ':'Necessidade de desenvolvimento ',
+            '(Opcional)':'(Opcional)',
             'Enviar mensaje':'Enviar mensagem',
             'Polynomium':'Polynomium',
             ' innovando el presente & futuro':' Inovando o presente & futuro',
@@ -166,12 +187,22 @@ const resources = {
             'Desarrollamos soluciones de software específicas para nuestros clientes y creamos productos tecnológicos propios.':'We develop specific software solutions for our clients and create our own technological products.',
 
             'Soluciones para empresas':'Solutions for Businesses',
+
             'Nuestros productos':'Our Products',
+
+            
             'Haciendo Realidad tus Sueños Tecnológicos':'Making Your Technological Dreams a Reality',
             '¿Tenés una visión ambiciosa? En Polynomium, colaboramos con vos para transformar tus ideas en soluciones digitales innovadoras, acompañándote en cada paso del proceso, desde la concepción hasta su implementación final. ¡Creamos tecnología que impulsa tu éxito! Software Personalizado Convertimos tus ideas en soluciones tecnológicas y las diseñamos basándonos en las necesidades únicas de tu negocio. Desde la optimización de procesos internos, gestión de contenidos eficientes, hasta la automatización de tareas críticas. En Polynomium te ayudamos a operar con mayor agilidad y eficacia a través del desarrollo personalizado de plataformas integrales que se adaptan a tu negocio.':'Do you have an ambitious vision? At Polynomium, we collaborate with you to transform your ideas into innovative digital solutions, supporting you every step of the way, from conception to final implementation. We create technology that drives your success! Customized Software We turn your ideas into technological solutions and design them based on the unique needs of your business. From optimizing internal processes and efficient content management to automating critical tasks, at Polynomium we help you operate with greater agility and effectiveness through the customized development of comprehensive platforms that adapt to your business.',
 
             'Empodera tu negocio con herramientas que mejoran la eficiencia y te permiten enfocarte en lo que realmente importa: Crecer.':'Empower your business with tools that enhance efficiency and allow you to focus on what really matters:',
-            "Nuestros desarrollos Cada uno de nuestros productos están pensados y diseñado para ser aplicados en los desarrollos de nuestros clientes en caso de querer hacer crecer sus proyectos existentes. O de igual manera en el caso de querer emprender desde cero brindamos la tecnología como una white label capaz de ser usada de manera independiente con la estética y cualidades agregadas a pedido, según tu necesidad. Plataformas responsivas web y moviles Nuestras soluciones son rápidas, responsivas y completamente optimizadas para ofrecer una experiencia de usuario fluida en cualquier dispositivo.":"Growing. Our Developments Each of our products is designed to be applied in our clients' developments if they want to grow their existing projects. Likewise, if they want to start from scratch, we provide technology as a white label solution that can be used independently with the aesthetics and qualities customized to your needs. Responsive Web and Mobile Platforms Our solutions are fast, responsive, and fully optimized to provide a smooth user experience on any device.",
+
+            'Nuestros desarrollos ':'Our Developments ',
+            "Cada uno de nuestros productos están pensados y diseñado para ser aplicados en los desarrollos de nuestros clientes en caso de querer hacer crecer sus proyectos existentes. O de igual manera en el caso de querer emprender desde cero brindamos la tecnología como una white label capaz de ser usada de manera independiente con la estética y cualidades agregadas a pedido, según tu necesidad.":"Each of our products is designed to be applied in our clients' developments if they want to grow their existing projects. Similarly, if they want to start from scratch, we provide technology as a white label solution that can be used independently, with aesthetics and features customized to your needs.",
+
+            'Plataformas responsivas web y moviles ':'Responsive Web and Mobile Platforms ',
+
+            'Nuestras soluciones son rápidas, responsivas y completamente optimizadas para ofrecer una experiencia de usuario fluida en cualquier dispositivo.':'Our solutions are fast, responsive, and fully optimized to provide a smooth user experience on any device.',
+            
 
             'Proyectos':'Projects',
             'Megapix':'Megapix',
@@ -192,9 +223,10 @@ const resources = {
             'Productos Polynomium':'Polynomium Products',
             'Nombre completo':'Full Name',
             'E-mail':'Email',
-            'Nombre empresa (Opcional)':'Company Name (Optional)',
+            'Nombre empresa ':'Company Name ',
+            '(Opcional)':'(Optional)',
             'País':'Country',
-            'Desarrollar necesidad (Opcional)':'Development Needs (Optional)',
+            'Desarrollar necesidad ':'Development Needs ',
             'Enviar mensaje':'Send Message',
             'Polynomium':'Polynomium',
             ' innovando el presente & futuro':' innovating the Present & Future',
