@@ -195,6 +195,32 @@
   }
 }
 
+@media (min-width: 773px) and (max-width: 992px) {
+  .containerTextosAbout {
+    width: 90%;
+  }
+  .tituloAbout {
+    font-size: 3em;
+  }
+  .tituloMiniAbout {
+    font-size: 1em;
+  }
+  .textoAbout {
+    font-size: 1em;
+  }
+  .contenedorMyV {
+    flex-direction: column;
+    width: 80%;
+    gap: .5em;
+  }
+  .contenedorColumnasAbout {
+    height: 200px;
+  }
+  .contenedorAboutTotal {
+    gap: 5em;
+  }
+}
+
 @media (min-width: 1200px) and (max-width: 1440px) {
   .tituloMiniAbout {
     font-size: 1em;

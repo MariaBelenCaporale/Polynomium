@@ -249,6 +249,11 @@
   }
 }
 
+@media (min-width: 773px) and (max-width: 992px) {
+  .contenedorCarouselUno {
+    width: 90%;
+  }
+}
 
 @media (min-width: 1200px) and (max-width: 1440px) {
   .contenedorCard {

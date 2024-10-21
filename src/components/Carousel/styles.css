@@ -221,6 +221,20 @@ background-color: #0075FF !important;
   }
 }
 
+@media (min-width: 773px) and (max-width: 992px) {
+  .sectionCarousel {
+    height: auto;
+  }
+  .fraseFondoTexto {
+    font-size: 9em;
+  }
+  .btnCarousel {
+    width: 70px;
+    height: 70px;
+  }
+  
+}
+
 @media (min-width: 1200px) and (max-width: 1440px) {  
   .luzUno,
   .luzUnoA {

@@ -16,12 +16,15 @@
   }
 
 .contenedorRocaSlogan {
-  position: relative;
+  position: absolute;
   width: 100%;
 }
-.contenedorRocaSlogan img {
+.slogan{
   width: 100%;
-  position: absolute;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .sloganTexto {
     color: #FFF;
@@ -38,7 +41,6 @@
     justify-content: center;
     width: 100%;
     height: 80vh;
-    position: relative;
 }
 .contenedorTextoSlogan {
     display: flex;
@@ -85,8 +87,10 @@
     }
     .contenedorRocaSlogan img {
       width: 80%;
+    }
+    .contenedorRocaSlogan {
       left: 200px;
-      bottom: -60px;
+      bottom: 60px;
     }
     .polyAzul {
       color: #0075FF;
@@ -105,8 +109,28 @@
     }
     .contenedorRocaSlogan img {
       width: 70%;
+    }
+    .contenedorRocaSlogan {
       left: 400px;
-      bottom: -70px;
+      bottom: 100px;
+    }
+  }
+  @media (min-width: 773px) and (max-width: 992px) {
+    .contenedorImgAdn img {
+      width: 20%;
+    }
+    .contenedorTextoSlogan {
+      width: 90%;
+    }
+    .sloganTexto {
+      font-size: 2.5em;
+    }
+    .contenedorRocaSlogan img {
+      width: 70%;
+    }
+    .contenedorRocaSlogan {
+      left: 400px;
+      bottom: 100px;
     }
   }
 
@@ -121,11 +145,11 @@
         width: 10%;
     }
     .contenedorRocaSlogan {
-      right: -500px;
-      bottom: 100px;
+      left: 980px;
+      bottom: -90px;
     }
     .contenedorRocaSlogan img {
-      width: 80%;
+      width: 50%;
     } 
 }
 

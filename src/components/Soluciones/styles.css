@@ -180,6 +180,24 @@
   }
 }
 
+@media (min-width: 773px) and (max-width: 992px) {
+  .tituloSoluciones {
+    font-size: 3em;
+  }
+  .textoSoluciones {
+    font-size: 1.4em;
+  }
+  .contenedorSolucionTexto {
+    width: 80%;
+  }
+  .solucionesDos, .solucionesUno {
+    gap: 3em;
+  }
+  .sectionSoluciones {
+    height: auto;
+  }
+}
+
 @media (min-width: 1200px) and (max-width: 1440px) {
   .contenedorSolucionesTotal {
     width: 80%;

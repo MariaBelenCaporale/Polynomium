@@ -5,6 +5,7 @@ import Adn from '../../images/adn.png';
 const Slogan = () => {
     return (
         <section className='sectionSlogan'>
+            <div className='slogan'>
             <div className='contenedorRocaSlogan'>
                 <img src={Roca} alt='rica flotando' />
             </div>
@@ -13,6 +14,7 @@ const Slogan = () => {
             </div>
             <div className='contenedorTextoSlogan'>
                 <h2 className='sloganTexto'> <span className='polyAzul'>Polynomium,</span> innovando el presente & futuro</h2>
+            </div>
             </div>
         </section>
     )
