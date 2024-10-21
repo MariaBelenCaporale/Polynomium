@@ -1,0 +1,12 @@
+.git
+.github
+.gitmodules
+.dockerignore
+.venv
+LICENSE
+README.md
+SECURITY.md
+Dockerfile
+docker-compose
+requirements-lint.txt
+node_modules
