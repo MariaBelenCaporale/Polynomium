@@ -78,6 +78,24 @@
         height: auto;
     }
 }
+
+@media (min-width: 773px) and (max-width: 992px)  {
+    .imgBola {
+        width: 900px;
+    }
+    .rayo, .rayoDos {
+        width: 100%;
+    }
+    .luzAzulDos, .luzAzul {
+        top: 40%;
+    }
+    .luzAzul, .luzAzulDos {
+        width: 250px;
+        height: 250px;
+        filter: blur(90px);
+    }
+}
+
 @media (min-width: 1200px) and (max-width: 1440px) {
 .imgBola {
     width: 100%;

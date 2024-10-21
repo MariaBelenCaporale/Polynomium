@@ -38,6 +38,17 @@
         gap: 4em;
     }
 }
+@media (min-width: 773px) and (max-width: 992px)  {
+    .contieneRocaHome {
+        top: -200px;
+    }
+    .contieneRocaHome img {
+        width: 100%;
+    }
+    .contenedorHome {
+        gap: 4em;
+    }
+}
 @media (min-width: 1200px) and (max-width: 1440px) {
 
 }

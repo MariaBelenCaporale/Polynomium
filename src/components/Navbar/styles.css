@@ -71,6 +71,11 @@
     width: 50%;
   }
 }
+@media (min-width: 773px) and (max-width: 992px)  {
+  .logo {
+    width: 80%;
+  }
+}
 
 @media (min-width: 1200px) and (max-width: 1440px) {
   .link {
