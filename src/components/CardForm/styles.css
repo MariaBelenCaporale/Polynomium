@@ -193,7 +193,17 @@
   }
 }
 
-@media (min-width: 1200px) and (max-width: 1440px) {
+@media (min-width: 773px) and (max-width: 992px) {
+  .formBack {
+    width: 80%;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .formBack {
+    width: 80%;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1440px) {
   .formBack {
     width: 100%;
   }
@@ -221,13 +231,25 @@
     align-items: center;
     flex-direction: row;
     gap: 2em;
-    width: auto;
+    width: 60%;
+  }
+  .textForm {
+    font-size: 2em;
   }
   .containerDiamanteForm img {
     width: 10%;
   }
+  .labelTexto {
+    font-size: 1.2em;
+  }
+  .containerDiamanteFormDos {
+    left: 1610px;
+  }
   .containerDiamanteForm {
     bottom: 200px;
     left: 150px;
+  }
+  .formulario {
+    gap: 3em;
   }
 }

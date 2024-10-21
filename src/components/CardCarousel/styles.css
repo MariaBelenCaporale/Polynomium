@@ -261,7 +261,17 @@
   }
 }
 
-@media (min-width: 1200px) and (max-width: 1440px) {
+@media (min-width: 993px) and (max-width: 1200px) {
+  .imgAssiria, .imgFluence {
+    width: 70%;
+  }
+  .imgMegapix {
+    width: 50%;
+  }
+  
+}
+
+@media (min-width: 1201px) and (max-width: 1440px) {
   .contenedorCard {
     gap: 6em;
   }

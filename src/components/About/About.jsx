@@ -20,7 +20,7 @@ const About = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 992);
     };
 
     window.addEventListener('resize', handleResize);

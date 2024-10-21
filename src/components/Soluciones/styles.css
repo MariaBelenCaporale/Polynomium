@@ -198,7 +198,13 @@
   }
 }
 
-@media (min-width: 1200px) and (max-width: 1440px) {
+@media (min-width: 993px) and (max-width: 1200px) {
+  .solucionesDos, .solucionesUno {
+    gap: 3em;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1440px) {
   .contenedorSolucionesTotal {
     width: 80%;
   }
@@ -226,6 +232,7 @@
 @media (min-width: 1441px) {
   .textoClickSoluciones {
     font-size: 1.3em;
+    line-height: 40px;
   }
   .btnSolucion {
     font-size: 2em;
@@ -235,5 +242,8 @@
   }
   .titulo {
     font-family: 'Poppins-Bold';
+  }
+  .solucionesDos, .solucionesUno {
+    gap: 2em;
   }
 }

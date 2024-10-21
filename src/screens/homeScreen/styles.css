@@ -49,6 +49,12 @@
         gap: 4em;
     }
 }
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .contenedorHome {
+        gap: 7em;
+    }
+}
 @media (min-width: 1200px) and (max-width: 1440px) {
 
 }

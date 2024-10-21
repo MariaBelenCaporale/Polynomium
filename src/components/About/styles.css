@@ -221,7 +221,13 @@
   }
 }
 
-@media (min-width: 1200px) and (max-width: 1440px) {
+@media (min-width: 993px) and (max-width: 1200px) {
+  .containerTextosAbout {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1440px) {
   .tituloMiniAbout {
     font-size: 1em;
   }
@@ -257,5 +263,8 @@
   }
   .textosMisionVision {
     font-size: 1.3em;
+  }
+  .containerTextosAbout {
+    width: 50%;
   }
 }

@@ -76,8 +76,13 @@
     width: 80%;
   }
 }
+@media (min-width: 993px) and (max-width: 1200px)  {
+  .logo {
+    width: 60%;
+  }
+}
 
-@media (min-width: 1200px) and (max-width: 1440px) {
+@media (min-width: 1201px) and (max-width: 1440px) {
   .link {
     font-size: 1em;
     font-weight: 400;

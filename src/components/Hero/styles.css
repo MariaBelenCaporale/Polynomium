@@ -157,8 +157,23 @@
     font-size: 2em;
   }
 }
+@media (min-width: 993px) and (max-width: 1200px) {
+  .tituloHero, .tituloHeroAzul {
+    font-size: 3em;
+  }
+  .contenedorRocaUno {
+    left: -550px;
+  }
+  .contenedorRocaDos {
+    top: 400px;
+    right: -550px;
+  }
+  .subtituloHero {
+    font-size: 2em;
+  }
+}
 
-@media (min-width: 1200px) and (max-width: 1440px) {
+@media (min-width: 1201px) and (max-width: 1440px) {
     .sectionHero {
         margin: 80px 0px;
         gap: 5em;
