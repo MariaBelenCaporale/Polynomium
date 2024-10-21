@@ -4,13 +4,11 @@ import Formas from "../../images/formas.png";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import PropTypes from "prop-types";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 import "./styles.css";
-
 
 const Footer = () => {
   const { t } = useTranslation();
-  
 
   return (
     <div className="containerFooter">
@@ -18,44 +16,39 @@ const Footer = () => {
         <div className="footerOrder">
           <div className="containerLogoFooter">
             <a href="#top" className="logoFooterLink">
-              <img className='logoFooter' src={LogoFooter} alt="Logo Megapix" />
+              <img className="logoFooter" src={LogoFooter} alt="Logo Megapix" />
             </a>
           </div>
 
           <div className="containerTotal">
             <div className="listResponsive">
               <div className="columnOneFooter">
-                <NavLink
-                  to="/"
-                  className={({ isActive }) =>
-                    isActive ? "navlink active" : "navlink inactive"
-                  }
-                  onClick={''} 
+                <a
+                  href="#nosotros"
+                  className="navlink"
+                  onClick={() => { }}
                 >
-                  <p className="textNavOne">{t('¿Quiénes somos?')}</p>
-                </NavLink>
+                  <p className="textNavOne">{t("¿Quiénes somos?")}</p>
+                </a>
 
-                <NavLink
-                  to="https://www.polynomium.com/"
+                <a
+                  href="https://www.polynomium.com/"
                   target="_blank"
-                  className={({ isActive }) =>
-                    isActive ? "navlink active" : "navlink inactive"
-                  }
-                  onClick={''} 
+                  className="navlink"
+                  onClick={() => { }}
                 >
-                  <p className="textNavThree">{t('Preguntas frecuentes')}</p>
-                </NavLink>
+                  <p className="textNavThree">{t("Preguntas frecuentes")}</p>
+                </a>
 
-                <NavLink
-                href="#contacto"
-                  
-                  className={({ isActive }) =>
-                    isActive ? "navlink active" : "navlink inactive"
-                  }
-                  onClick={''} 
-                >
-                  <p className="textNavThree">{t('Contacto')}</p>
-                </NavLink>
+                <div className="columnOneFooter">
+                  <a
+                    href="#contacto"
+                    className="navlink"
+                    onClick={() => { }}
+                  >
+                    <p className="textNavThree">{t("Contacto")}</p>
+                  </a>
+                </div>
               </div>
 
               <div className="columnOneFooter">
@@ -64,9 +57,9 @@ const Footer = () => {
                   className={({ isActive }) =>
                     isActive ? "navlink active" : "navlink inactive"
                   }
-                  onClick={''} 
+                  onClick={""}
                 >
-                  <p className="textNavThree">{t('Política de privacidad')}</p>
+                  <p className="textNavThree">{t("Política de privacidad")}</p>
                 </NavLink>
 
                 <NavLink
@@ -74,23 +67,32 @@ const Footer = () => {
                   className={({ isActive }) =>
                     isActive ? "navlink active" : "navlink inactive"
                   }
-                  onClick={''} 
+                  onClick={""}
                 >
-                  <p className="textNavThree">{t('Términos & condiciones')}</p>
+                  <p className="textNavThree">{t("Términos & condiciones")}</p>
                 </NavLink>
-
               </div>
             </div>
           </div>
           <span className="lineResponsive"></span>
           <div>
             <div className="columnOneFooter">
-              <p className="textNavComunidad">{t('Comunidad')}</p>
+              <p className="textNavComunidad">{t("Comunidad")}</p>
               <div className="columnOneFooterRed">
-                <a href={'https://www.instagram.com/megapix_arg/'} className="red" target="_blank" rel="noreferrer">
+                <a
+                  href={"https://www.instagram.com/megapix_arg/"}
+                  className="red"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <InstagramIcon />
                 </a>
-                <a href="https://www.linkedin.com/company/megapixpay/posts/?feedView=all" className="red" target="_blank" rel="noreferrer">
+                <a
+                  href="https://www.linkedin.com/company/megapixpay/posts/?feedView=all"
+                  className="red"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <LinkedInIcon />
                 </a>
               </div>
