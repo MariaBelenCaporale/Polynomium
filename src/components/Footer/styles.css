@@ -24,6 +24,11 @@
     justify-content: center;
     width: 100%;
   }
+  .lineResponsive {
+    display: flex;
+    border: 1px solid white;
+    width: 100%;
+  }
   .containerImportant {
     width: 85%;
     margin-bottom: 2em;
@@ -54,7 +59,7 @@
     color: white;
 }
 .red:hover {
-    color: #62FEE2;
+    color: #0075FF;
 }
 .columnOneFooter {
     display: flex;
@@ -121,7 +126,7 @@
     width: 100%;
 }
 .navlink:hover {
-    color: #62FEE2;
+    color: #0075FF;
 }
 
 .footer {
@@ -131,15 +136,7 @@
     align-items: center;
     justify-content: center;
 }
-.footerProduct {
-    color: #FFF;
-    font-family: "Poppins-Regular";
-    font-size: 1em;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 10px;
-}
+
 .footerOrder {
     border-radius: 30px;
     background: rgba(255, 255, 255, 0.10);
@@ -189,9 +186,6 @@
     .logoFooter {
         width: 80%;
     }
-    .footerProduct {
-        margin: 0px;
-    }
     .listResponsive {
         display: flex;
         width: 100%;
@@ -204,8 +198,6 @@
     }
     .lineResponsive {
         display: flex;
-        border: 1px solid white;
-        width: 100%;
     }
     .columnOneFooterRed {
         justify-content: center;
@@ -258,6 +250,35 @@
         top: 350px;
     }
 }
+
+@media (min-width: 577px) and (max-width: 772px) {
+    .footerOrder {
+        flex-direction: column;
+        height: auto;
+        padding: 40px;
+    }
+    .logoFooter {
+        width: 60%;
+    }
+    .logoFooterLink {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .listResponsive {
+        width: 100%;
+        align-items: flex-start;
+        justify-content: space-between;
+        display: flex;
+    }
+    .containerTotal {
+        width: 100%;
+    }
+    .columnOneFooterRed {
+        justify-content: center;
+    }
+}
+
 @media (min-width: 1441px)  {
     .listResponsive {
         display: flex;

@@ -16,10 +16,12 @@
   }
 
 .contenedorRocaSlogan {
-  position: absolute;
+  position: relative;
+  width: 100%;
 }
 .contenedorRocaSlogan img {
   width: 100%;
+  position: absolute;
 }
 .sloganTexto {
     color: #FFF;
@@ -81,15 +83,30 @@
     .sloganTexto {
       font-size: 1.7em;
     }
-    .contenedorRocaSlogan {
-      right: -700px;
-      bottom: 120px;
-    }
     .contenedorRocaSlogan img {
-      width: 50%;
+      width: 80%;
+      left: 200px;
+      bottom: -60px;
     }
     .polyAzul {
       color: #0075FF;
+    }
+  }
+
+  @media (min-width: 577px) and (max-width: 772px) {
+    .contenedorImgAdn img {
+      width: 20%;
+    }
+    .contenedorTextoSlogan {
+      width: 90%;
+    }
+    .sloganTexto {
+      font-size: 2.5em;
+    }
+    .contenedorRocaSlogan img {
+      width: 70%;
+      left: 400px;
+      bottom: -70px;
     }
   }
 

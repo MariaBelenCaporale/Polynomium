@@ -17,10 +17,9 @@ const Footer = () => {
       <div className="footer">
         <div className="footerOrder">
           <div className="containerLogoFooter">
-            <a href="#top">
+            <a href="#top" className="logoFooterLink">
               <img className='logoFooter' src={LogoFooter} alt="Logo Megapix" />
             </a>
-            <p className="footerProduct">{t('Un producto de Polynomium®')}</p>
           </div>
 
           <div className="containerTotal">
@@ -48,7 +47,8 @@ const Footer = () => {
                 </NavLink>
 
                 <NavLink
-                  to="/faqs"
+                href="#contacto"
+                  
                   className={({ isActive }) =>
                     isActive ? "navlink active" : "navlink inactive"
                   }

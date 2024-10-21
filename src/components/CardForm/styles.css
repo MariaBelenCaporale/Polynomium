@@ -181,6 +181,18 @@
   }
 }
 
+@media (min-width: 577px) and (max-width: 772px) {
+  .containerForm {
+    padding: 40px;
+  }
+  .formBack {
+    width: 100%;
+  }
+  .contenedorButtonForm {
+    gap: 2em;
+  }
+}
+
 @media (min-width: 1200px) and (max-width: 1440px) {
   .formBack {
     width: 100%;
