@@ -175,7 +175,10 @@ background-color: #0075FF !important;
   }
   .contenedorCarouselTotal {
     width: 90%;
-    
+  }
+  .fraseFondo {
+    overflow: hidden;
+    width: 100%;
   }
   .btnCarousel {
     display: none;

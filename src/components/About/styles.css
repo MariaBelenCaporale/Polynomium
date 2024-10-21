@@ -186,6 +186,9 @@
   .contenedorMyV {
     gap: 3em;
   }
+  .sectionAbout {
+    height: 100vh;
+  }
 }
 
 @media (min-width: 1441px) {
