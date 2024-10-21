@@ -162,9 +162,9 @@ background-color: #0075FF !important;
 @media (max-width: 576px) {
   .luzUno,
   .luzUnoA {
-    filter: blur(100px);
-    width: 350px;
-    height: 350px;
+    filter: blur(60px);
+    width: 250px;
+    height: 250px;
   }
   .luzUno {
     background: rgba(0, 117, 255, 0.40); 
