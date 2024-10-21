@@ -111,6 +111,7 @@
   animation: floatFichaUno 5s ease-in-out infinite; 
   position: relative;
   top: -80px;
+  rotate: -50deg;
 }
 .fichaUno {
   animation: floatFichaUno 5s ease-in-out infinite; 
@@ -192,12 +193,10 @@
     width: 100%;
     flex-direction: column;
   }
-  .imgAssiria, .imgFluence {
+  .imgAssiria, .imgFluence, .imgMegapix {
     width: 40%;
   }
-  .imgMegapix {
-    width: 30%;
-  }
+
   .rocaGira {
     width: 100%;
   }
@@ -235,12 +234,10 @@
     width: 100%;
     flex-direction: column;
   }
-  .imgAssiria, .imgFluence {
+  .imgAssiria, .imgFluence, .imgMegapix {
     width: 30%;
   }
-  .imgMegapix {
-    width: 20%;
-  }
+
   .rocaGira {
     width: 100%;
   }
@@ -253,20 +250,15 @@
   .contenedorCarouselUno {
     width: 90%;
   }
-  .imgAssiria, .imgFluence {
+  .imgAssiria, .imgFluence, .imgMegapix {
     width: 70%;
   }
-  .imgMegapix {
-    width: 60%;
-  }
+
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
-  .imgAssiria, .imgFluence {
+  .imgAssiria, .imgFluence, .imgMegapix {
     width: 70%;
-  }
-  .imgMegapix {
-    width: 50%;
   }
   
 }
@@ -293,12 +285,10 @@
   .contenedorCarouselUno {
     gap: 2em;
   }
-  .imgAssiria, .imgFluence {
+  .imgAssiria, .imgFluence, .imgMegapix {
     width: 60%;
   }
-  .imgMegapix {
-    width: 40%;
-  } 
+
 }
 
 
@@ -324,10 +314,8 @@
   .contenedorCarouselUno {
     gap: 2em;
   }
-  .imgAssiria, .imgFluence {
+  .imgAssiria, .imgFluence, .imgMegapix {
     width: 60%;
   }
-  .imgMegapix {
-    width: 40%;
-  } 
+
 }
