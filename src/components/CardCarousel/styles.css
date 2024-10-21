@@ -253,6 +253,12 @@
   .contenedorCarouselUno {
     width: 90%;
   }
+  .imgAssiria, .imgFluence {
+    width: 70%;
+  }
+  .imgMegapix {
+    width: 60%;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1440px) {
