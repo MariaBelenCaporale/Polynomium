@@ -161,6 +161,40 @@
   }
 }
 
+@media (min-width: 577px) and (max-width: 772px) {
+  .tituloAbout {
+    font-size: 2.3em;
+  }
+  .containerTextosAbout {
+    width: 90%;
+  }
+  .tituloMiniAbout {
+    font-size: 1em;
+  }
+  .textoAbout {
+    font-size: 1.2em;
+  }
+  .contenedorMyV {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .misionVision {
+    font-size: 1.3em;
+  }
+  .contenedorAboutTotal {
+    gap: 4em;
+  }
+  .sliderControls {
+    margin: 0px;
+  }
+  .sectionAbout {
+    height: auto;
+  }
+  .contenedorColumnasAbout {
+    height: 300px;
+  }
+}
+
 @media (min-width: 1200px) and (max-width: 1440px) {
   .tituloMiniAbout {
     font-size: 1em;

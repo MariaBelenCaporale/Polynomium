@@ -59,6 +59,25 @@
         height: auto;
     }
 }
+@media (min-width: 577px) and (max-width: 772px)  {
+    .imgBola {
+        width: 600px;
+    }
+    .luzAzul, .luzAzulDos {
+        width: 50px;
+        height: 50px;
+        filter: blur(30px);
+    }
+    .rayo, .rayoDos {
+        width: 100%;
+    }
+    .sectionEnergia {
+        height: 50vh;
+    }
+    .contieneBola {
+        height: auto;
+    }
+}
 @media (min-width: 1200px) and (max-width: 1440px) {
 .imgBola {
     width: 100%;

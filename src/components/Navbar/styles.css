@@ -63,6 +63,15 @@
     background: linear-gradient(0deg, rgba(17, 17, 17, 0.00) 15.94%, #0c0c0cc7 66.12%);
   }
 }
+@media (min-width: 577px) and (max-width: 772px) {
+  .navLinks {
+    display: none;
+  }
+  .logo {
+    width: 50%;
+  }
+}
+
 @media (min-width: 1200px) and (max-width: 1440px) {
   .link {
     font-size: 1em;

@@ -109,7 +109,37 @@
   .rocaUnoHero {
     width: 50%;
   }
-  
+}
+@media (min-width: 577px) and (max-width: 772px) {
+  .contenedorRocaUno img {
+    width: 80%;
+  }
+  .tituloHero, .tituloHeroAzul {
+    font-size: 2.5em;
+  }
+  .subtituloHero {
+    font-size: 1.3em;
+  }
+  .containerTextosHero {
+    gap: .5em;
+  }
+  .contenedorRocaUno {    
+    top: -150px;
+  }
+  .contenedorRocaDos {
+    top: 400px;
+    right: -600px;
+  }
+  .sectionHero {
+    flex-direction: column;
+    gap: 3em;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80vh;
+  }
+  .rocaUnoHero {
+    width: 50%;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1440px) {

@@ -186,8 +186,39 @@ background-color: #0075FF !important;
   .fraseFondoTexto {
     font-size: 4em;
     font-family: 'Poppins-Medium';
+    text-shadow: none;
   }
-
+}
+@media (min-width: 577px) and (max-width: 772px)  {
+  .luzUno,
+  .luzUnoA {
+    filter: blur(90px);
+    width: 250px;
+    height: 250px;
+  }
+  .luzUno {
+    background: rgba(0, 117, 255, 0.40); 
+    left: -190px;
+  }
+  .luzUnoA {
+    background: rgba(0, 117, 255, 0.40); 
+    right: -190px;
+  }
+  .contenedorCarouselTotal {
+    width: 90%;
+  }
+  .fraseFondo {
+    overflow: hidden;
+    width: 100%;
+  }
+  .btnCarousel {
+    display: none;
+  }
+  .fraseFondoTexto {
+    font-size: 7em;
+    font-family: 'Poppins-Medium';
+    text-shadow: none;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1440px) {  

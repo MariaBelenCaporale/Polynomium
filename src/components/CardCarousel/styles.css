@@ -205,6 +205,49 @@
     display: none;
   }
 }
+@media (min-width: 577px) and (max-width: 772px)  {
+  .contenedorCard {
+    gap: 5em;
+  }
+  .miniTituloCarousel {
+    font-size: .8em;
+    text-align: center;
+  }
+  .tituloCarousel {
+    text-align: center;
+    font-size: 4em;
+  }
+  .subtituloCarousel {
+    text-align: center;
+    font-size: 1.1em;
+  }
+  .subtituloCarouselDos {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  .contenedorTextosCarousel {
+    align-items: center;
+    gap: 1em;
+    width: 90%;
+  }
+  .contenedorCarouselUno {
+    gap: 1em;
+    width: 100%;
+    flex-direction: column;
+  }
+  .imgAssiria, .imgFluence {
+    width: 30%;
+  }
+  .imgMegapix {
+    width: 20%;
+  }
+  .rocaGira {
+    width: 100%;
+  }
+  .fichaDos, .fichaUno, .imgMega {
+    display: none;
+  }
+}
 
 
 @media (min-width: 1200px) and (max-width: 1440px) {

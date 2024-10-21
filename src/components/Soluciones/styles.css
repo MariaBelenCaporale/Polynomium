@@ -102,6 +102,9 @@
   background-color: #FFFFFF;
   transition: background-color 0.3s ease; 
 }
+.titulo {
+  font-family: 'Poppins-Medium';
+}
 
 @media (max-width: 576px) {
   .sectionSoluciones {
@@ -147,6 +150,33 @@
     font-size: .9em;
     font-family: 'Poppins-Bold';
     letter-spacing: 1px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 772px) {
+  .tituloSoluciones {
+    font-size: 2.3em;
+  }
+  .sectionSoluciones {
+    height: auto;
+  }
+  .contenedorSolucionesTotal {
+    flex-direction: column;
+  }
+  .textoSoluciones {
+    font-size: 1.2em;
+  }
+  .contenedorBotonesSolu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 2em;
+  }
+  .contenedorSolucionTexto {
+    width: 100%;
+  }
+  .solucionesDos, .solucionesUno {
+    gap: 2em;
   }
 }
 

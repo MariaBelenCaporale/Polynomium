@@ -100,7 +100,8 @@ const Carousel = () => {
           <SwiperSlide>
             <CardCarousel 
               titleButton='Ver más'
-              // onButtonClick={() => openPopup('https://player.vimeo.com/video/1019520949?share=copy')}
+              onButtonClick={() => window.open('https://mgapix.com/', '_blank')}
+              
               miniTitulo="Proyectos"
               titulo="Megapix"
               textoUno="Revolucionando los Pagos con PIX"
