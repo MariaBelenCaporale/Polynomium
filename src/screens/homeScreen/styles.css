@@ -56,5 +56,13 @@
     }
 }
 @media (min-width: 1200px) and (max-width: 1440px) {
+    .contenedorHome {
+        gap: 3em;
+    }
+}
 
+@media (min-width: 1441px) {
+    .contenedorHome {
+        gap: 10em;
+    }
 }

@@ -15,6 +15,7 @@
     src: url("../../fonts/Poppins/Poppins-Light.ttf");
   }
 
+ 
   .btnForm {
     display: flex;
     width: 100%;
@@ -39,6 +40,14 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+  }
+  .btnForm.selected {
+    background-color: #111;
+    border: 2px solid #0075FF;
+  }
+  .btnForm:hover {
+    background-color: #111;
+    border: 2px solid #0075FF;
   }
 
 @media (max-width: 576px) {

@@ -127,3 +127,16 @@
 }
 
 }
+@media (min-width: 1441px) {
+.imgBola {
+    width: 100%;
+}
+.rayo {
+    width: 70%;
+}
+.rayoDos {
+    width: 80%;
+    rotate: 240deg;
+}
+
+}
