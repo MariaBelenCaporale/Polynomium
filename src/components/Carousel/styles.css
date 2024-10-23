@@ -182,7 +182,19 @@ background-color: #0075FF !important;
     width: 100%;
   }
   .btnCarousel {
-    display: none;
+    background-color: transparent;
+    border: none;
+    height: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    color: white;
+    width: 100%;
+    box-shadow: none;
+  }
+  .btnCarousel:hover {
+    border: transparent;
+    background-color: transparent;
+    box-shadow: none;
   }
   .fraseFondoTexto {
     font-size: 4em;
@@ -213,7 +225,19 @@ background-color: #0075FF !important;
     width: 100%;
   }
   .btnCarousel {
-    display: none;
+    background-color: transparent;
+    border: none;
+    height: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    color: white;
+    width: 100%;
+    box-shadow: none;
+  }
+  .btnCarousel:hover {
+    border: transparent;
+    background-color: transparent;
+    box-shadow: none;
   }
   .fraseFondoTexto {
     font-size: 7em;

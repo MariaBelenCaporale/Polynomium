@@ -151,6 +151,7 @@
   .textosMisionVision {
     font-size: .9em;
     line-height: 20px;
+    text-align: center;
   }
   .containerTextosAbout {
     width: 90%;
@@ -158,6 +159,7 @@
   .contenedorMyV {
     flex-direction: column;
     gap: .5em;
+    align-items: center;
   }
 }
 
@@ -177,6 +179,7 @@
   .contenedorMyV {
     flex-direction: column;
     gap: 1em;
+    align-items: center;
   }
   .misionVision {
     font-size: 1.3em;
@@ -192,6 +195,9 @@
   }
   .contenedorColumnasAbout {
     height: 300px;
+  }
+  .textosMisionVision {
+    text-align: center;
   }
 }
 
@@ -212,12 +218,16 @@
     flex-direction: column;
     width: 80%;
     gap: .5em;
+    align-items: center;
   }
   .contenedorColumnasAbout {
     height: 200px;
   }
   .contenedorAboutTotal {
     gap: 5em;
+  }
+  .textosMisionVision {
+    text-align: center;
   }
 }
 

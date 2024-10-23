@@ -90,13 +90,14 @@
 
 @media (max-width: 577px) {
   .buttonStyle {
-    width: 250px;
+    width: 70%;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1em;
     margin-top: 30px;
+    padding: 10px 10px;
   }
   .buttonStyle:hover {
     display: flex;

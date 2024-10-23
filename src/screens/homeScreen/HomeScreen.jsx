@@ -9,6 +9,7 @@ import Soluciones from '../../components/Soluciones/Soluciones';
 import './styles.css';
 import Roca from '../../images/roca.png';
 import NavBar from '../../components/Navbar/NavBar';
+import TextoCorte from '../../components/TextoCorte/TextoCorte';
 
 
 const HomeScreen = () => {
@@ -22,6 +23,7 @@ const HomeScreen = () => {
             <NavBar />
             <Hero />
             <About />
+            <TextoCorte />
             <Soluciones />
             <Carousel />
             <CardForm />
