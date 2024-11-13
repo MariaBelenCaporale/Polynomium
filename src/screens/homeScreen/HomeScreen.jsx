@@ -10,6 +10,8 @@ import './styles.css';
 import Roca from '../../images/roca.png';
 import NavBar from '../../components/Navbar/NavBar';
 import TextoCorte from '../../components/TextoCorte/TextoCorte';
+// import Necesidad from '../../components/Necesidad/Necesidad';
+
 
 
 const HomeScreen = () => {
@@ -25,6 +27,7 @@ const HomeScreen = () => {
             <About />
             <TextoCorte />
             <Soluciones />
+            {/* <Necesidad /> */}
             <Carousel />
             <CardForm />
             <Slogan />

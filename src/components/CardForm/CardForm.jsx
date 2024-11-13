@@ -10,11 +10,12 @@ const CardForm = () => {
   const { t } = useTranslation();
   const [selectedButton, setSelectedButton] = useState(null);
   const [formData, setFormData] = useState({
-    nombre: "",  
+    nombre: "",
     email: "",
     empresa: "",
     pais: "",
     necesidad: "",
+    phone: "",
   });
   
   const [errors, setErrors] = useState({});
@@ -31,9 +32,12 @@ const CardForm = () => {
   
   const validateForm = () => {
     const newErrors = {};
+
     if (!formData.nombre) newErrors.nombre = t("Campo obligatorio.");
-    if (!formData.email) newErrors.email = t("Campo obligatorio.");
+    if (!formData.email || !/\S+@\S+\.\S+/.test(formData.email)) newErrors.email = t("Email inválido.");
     if (!formData.pais) newErrors.pais = t("Campo obligatorio.");
+    if (!formData.phone || formData.phone.length < 10) newErrors.phone = t("Número de teléfono inválido.");
+    
     return newErrors;
   };
 
@@ -57,7 +61,7 @@ const CardForm = () => {
 
   const isFormValid = () => {
     const validationErrors = validateForm();
-    return Object.keys(validationErrors).length === 0 && formData.nombre && formData.email && formData.pais;
+    return Object.keys(validationErrors).length === 0 && formData.nombre && formData.email && formData.pais && formData.phone;
   };
 
   return (
@@ -93,7 +97,7 @@ const CardForm = () => {
                   value={formData.nombre} 
                   onChange={handleChange} 
                   required 
-                  />
+                />
                 {errors.nombre && <span className="error">{errors.nombre}</span>}
               </div>
               <div className="labelInput">
@@ -128,6 +132,18 @@ const CardForm = () => {
                 />
                 {errors.pais && <span className="error">{errors.pais}</span>}
               </div>
+              <div className="labelInput">
+                <label htmlFor="phone" className="labelTexto">{t("Teléfono")}</label>
+                <input
+                  className="inputForm"
+                  type="number"
+                  id="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  required
+                />
+                {errors.phone && <span className="error">{errors.phone}</span>}
+              </div>
             </div>
 
             <div className="filaUnoForm">
@@ -136,12 +152,12 @@ const CardForm = () => {
                 <input type="text" id="necesidad" className="inputForm" value={formData.necesidad} onChange={handleChange} />
               </div>
             </div>
+
             <ButtonFirst 
               titleButton={t("Enviar mensaje")}
               onClick={handleSubmit}
               disabled={!isFormValid()} 
             />
-
           </form>
         </div>
       </div>
