@@ -14,7 +14,7 @@ const About = () => {
     },
     {
       title: t("Nuestra misión"),
-      text: t("Proporcionamos soluciones tecnológicas innovadoras y accesibles que empoderan a empresas y emprendedores, facilitando su crecimiento y adaptación al mercado digital. Creamos plataformas que permiten a las empresas optimizar sus operaciones, expandir su alcance y transformar sus negocios.")
+      text: t("Proporcionamos soluciones tecnológicas innovadoras que empoderan a empresas y emprendedores, facilitando su crecimiento y adaptación al mercado digital. Creamos plataformas que permiten a las empresas optimizar sus operaciones, expandir su alcance y transformar sus negocios.")
     }
   ];
 
