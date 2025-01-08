@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "Bebas";
+  src: url("../../fonts/BebasNeue-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("../../fonts/Poppins/Poppins-Light.ttf");
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../../fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../../fonts/Poppins/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../../fonts/Poppins/Poppins-Bold.ttf");
+}
+
+
+
+
+.contenedorBuenLugar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    gap: 2em;
+}
+.tituloBuenLugar {
+    font-family: 'Poppins-Medium';
+    color: white;
+    font-size: 2em;
+}
+.bannerBuenLugar {
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(20px);
+    padding: 40px 60px;
+    width: 40%;
+    align-items: center;
+    display: flex;
+}
+.bannerBuenLugarTexto {
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Poppins-Medium';
+}
+.textoBuenLugarContenedor {
+    display: flex;
+    width: 45%;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+}
+.textoBuenLugar {
+  color: white;
+  font-family: "Poppins-Regular";
+  font-size: 1em;
+  text-align: start;
+}
+.azulLugar {
+  color: #0075ff;
+}

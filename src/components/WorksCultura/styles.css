@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Bebas";
+  src: url("../../fonts/BebasNeue-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("../../fonts/Poppins/Poppins-Light.ttf");
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../../fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../../fonts/Poppins/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../../fonts/Poppins/Poppins-Bold.ttf");
+}
+
+
+
+
+.contenedorCultura {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 4em;
+}
+
+.bannerCultura {
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  padding: 40px 60px;
+  width: 80%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+}
+.textosCultura {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1em;
+}
+
+.bannerBuenLugarTextoAzul {
+  color: #0075ff;
+  font-family: "Poppins-Medium";
+  font-size: 1.5em;
+}
+
+.contieneImgCultura {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 200px;
+  border: 1px solid white;
+}
+.galeriaCultura {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2em;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.contieneGaleria {
+    width: 400px;
+    border-radius: 5px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.contieneGaleria img {
+    width: 100%;
+}

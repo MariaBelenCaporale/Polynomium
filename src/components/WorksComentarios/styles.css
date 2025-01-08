@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "Bebas";
+    src: url("../../fonts/BebasNeue-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Poppins-Light";
+    src: url("../../fonts/Poppins/Poppins-Light.ttf");
+  }
+  @font-face {
+    font-family: "Poppins-Regular";
+    src: url("../../fonts/Poppins/Poppins-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Poppins-Medium";
+    src: url("../../fonts/Poppins/Poppins-Medium.ttf");
+  }
+  @font-face {
+    font-family: "Poppins-Bold";
+    src: url("../../fonts/Poppins/Poppins-Bold.ttf");
+  }
+
+
+
+.contieneWorkComentario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.contenedorTextComentarios {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.textoComentarios {
+    font-family: 'Poppins-Regular';
+    font-size: 1em;
+    color: white;
+}
+.textoTitulo {
+    color: #0075ff;
+    font-family: 'Poppins-Regular';
+    font-size: 1em;
+}
+.contieneImgComentario {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagenComentarios {
+    width: 100%;
+}
+.lineaComentarios {
+    width: 100%;
+    background-color: white;
+    height: 1px;
+}

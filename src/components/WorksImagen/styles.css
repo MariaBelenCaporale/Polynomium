@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Bebas";
+  src: url("../../fonts/BebasNeue-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("../../fonts/Poppins/Poppins-Light.ttf");
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../../fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../../fonts/Poppins/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../../fonts/Poppins/Poppins-Bold.ttf");
+}
+
+.contenedorWorksImagen {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.imagen {
+  width: 400px;
+  border: 1px solid #0075ff;
+  height: 400px;
+}
+
+.tituloContieneWork {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.workTitulo {
+  font-family: "Poppins-Medium";
+  font-size: 2em;
+  color: white;
+  text-align: center;
+}
+.azulWork {
+  color: #0075ff;
+}
+
+.contenedorButtonWorksImg {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3em;
+}

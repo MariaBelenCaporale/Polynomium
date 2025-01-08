@@ -8,7 +8,7 @@ import Slogan from '../../components/Slogan/Slogan';
 import Soluciones from '../../components/Soluciones/Soluciones';
 import './styles.css';
 import Roca from '../../images/roca.png';
-import NavBar from '../../components/Navbar/NavBar';
+
 import TextoCorte from '../../components/TextoCorte/TextoCorte';
 // import Necesidad from '../../components/Necesidad/Necesidad';
 
@@ -22,7 +22,7 @@ const HomeScreen = () => {
             <div className='contieneRocaHome'>
                 <img src={Roca} alt='roca flotante' />
             </div>
-            <NavBar />
+            {/* <NavBar /> */}
             <Hero />
             <About />
             <TextoCorte />

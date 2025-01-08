@@ -71,6 +71,16 @@ const Footer = () => {
                 >
                   <p className="textNavThree">{t("Términos & condiciones")}</p>
                 </NavLink>
+
+                {/* <NavLink
+                  to="/trabaja"
+                  className={({ isActive }) =>
+                    isActive ? "navlink active" : "navlink inactive"
+                  }
+                  onClick={""}
+                >
+                  <p className="textNavThree">{t("Trabajá con nosotros")}</p>
+                </NavLink> */}
               </div>
             </div>
           </div>
