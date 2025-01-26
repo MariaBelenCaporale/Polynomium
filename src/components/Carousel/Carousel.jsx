@@ -119,8 +119,8 @@ const Carousel = () => {
           </SwiperSlide>
           <SwiperSlide>
             <CardCarousel
-              titleButton='Ver más'
-              onButtonClick={() => openPopup('https://player.vimeo.com/video/1019520949?share=copy')}
+              titleButton={null}
+              onButtonClick={() => openPopup('')}
               
               miniTitulo={t("Proyectos")}
               titulo={t("Assiria")}
