@@ -121,7 +121,7 @@
 .fichaDos {
   animation: floatFicha 8s ease-in-out infinite; 
   position: relative;
-  top: -100px;
+  top: 100px;
 }
 
 @keyframes floatFicha {

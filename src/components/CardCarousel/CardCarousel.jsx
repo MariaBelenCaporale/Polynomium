@@ -85,10 +85,12 @@ const CardCarousel = ({
             <p className="subtituloCarouselDos">{textoUno}</p>
             <p className="subtituloCarousel">{texto}</p>
           </div>
-          <div className="contenedorBtnCarouselBtn">
+
+            <div className="contenedorBtnCarouselBtn">
+  {titleButton && <ButtonFirst titleButton={titleButton} onClick={onButtonClick} />}
+</div>
+
             
-            <ButtonFirst titleButton={titleButton} onClick={onButtonClick} />
-          </div>
         </div>
       </div>
       <div className="contenedorRocaCarousel">
