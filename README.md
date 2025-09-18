@@ -1,9 +1,25 @@
-# React + Vite
+# Polynomium - Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Startup tecnológica enfocada en desarrollar soluciones de software a medida para sus clientes y en la creación de productos tecnológicos propios.
 
-Currently, two official plugins are available:
+## 🚀 Demo
+👉 [Ver sitio en vivo](https://polynomium.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# polynomium_landing
+## ✨ Características
+- Landing page informativa y responsive.
+- Desarrollada con React JS.
+- Diseño moderno y minimalista.
+
+## 🛠️ Tecnologías
+- React JS
+- JavaScript
+- Vercel (deploy)
+
+## 📦 Instalación
+Cloná el repositorio y ejecutá el proyecto localmente:
+
+```bash
+git clone https://github.com/usuario/proyecto.git
+cd proyecto
+npm install
+npm run dev
